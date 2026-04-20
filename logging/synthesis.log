@@ -1,0 +1,59 @@
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
+    Info: Copyright (C) 2024  Intel Corporation. All rights reserved.
+    Info: Your use of Intel Corporation's design tools, logic functions 
+    Info: and other software and tools, and any partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Intel Program License 
+    Info: Subscription Agreement, the Intel Quartus Prime License Agreement,
+    Info: the Intel FPGA IP License Agreement, or other applicable license
+    Info: agreement, including, without limitation, that your use is for
+    Info: the sole purpose of programming logic devices manufactured by
+    Info: Intel and sold by Intel or its authorized distributors.  Please
+    Info: refer to the applicable agreement for further details, at
+    Info: https://fpgasoftware.intel.com/eula.
+    Info: Processing started: Mon Apr 20 21:12:43 2026
+Info: Command: quartus_map ./generated/FPGA --parallel=12 --64bit --effort=auto --family="MAX 10" --incremental_compilation=full_incremental_compilation --optimize=balanced --part=10M50DAF484C7G --state_machine_encoding=auto
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20032): Parallel compilation is enabled and will use up to 12 processors
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd
+    Info (12022): Found design unit 1: top_module-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 20
+    Info (12023): Found entity 1: top_module File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 5
+Info (12127): Elaborating entity "top_module" for the top level hierarchy
+Warning (10541): VHDL Signal Declaration warning at top_module.vhd(9): used implicit default value for signal "o_PWM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 9
+Warning (10541): VHDL Signal Declaration warning at top_module.vhd(10): used implicit default value for signal "o_UART_TX" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+Warning (10541): VHDL Signal Declaration warning at top_module.vhd(12): used implicit default value for signal "o_PWMmotor" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 12
+Warning (10541): VHDL Signal Declaration warning at top_module.vhd(13): used implicit default value for signal "o_DIR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 13
+Warning (10541): VHDL Signal Declaration warning at top_module.vhd(14): used implicit default value for signal "o_NOTDIR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 14
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "o_PWM" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 9
+    Warning (13410): Pin "o_UART_TX" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Warning (13410): Pin "o_PWMmotor" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 12
+    Warning (13410): Pin "o_DIR" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 13
+    Warning (13410): Pin "o_NOTDIR" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 14
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 12 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "i_Clock" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 7
+    Warning (15610): No output dependent on input pin "i_UART_RX" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 11
+    Warning (15610): No output dependent on input pin "i_Switch[0]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[1]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[2]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[3]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[4]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[5]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[6]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[7]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[8]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Warning (15610): No output dependent on input pin "i_Switch[9]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 15 output pins
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 402 megabytes
+    Info: Processing ended: Mon Apr 20 21:12:48 2026
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:11

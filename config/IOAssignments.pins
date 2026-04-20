@@ -1,0 +1,34 @@
+PIN_P11 i_Clock
+
+PIN_A8 o_LEDR[0]
+PIN_A9 o_LEDR[1]
+PIN_A10 o_LEDR[2]
+PIN_B10 o_LEDR[3]
+PIN_D13 o_LEDR[4]
+PIN_C13 o_LEDR[5]
+PIN_E14 o_LEDR[6]
+PIN_D14 o_LEDR[7]
+PIN_A11 o_LEDR[8]
+PIN_B11 o_LEDR[9]
+
+PIN_C10 i_Switch[0]
+PIN_C11 i_Switch[1]
+PIN_D12 i_Switch[2]
+PIN_C12 i_Switch[3]
+PIN_A12 i_Switch[4]
+PIN_B12 i_Switch[5]
+PIN_A13 i_Switch[6]
+PIN_A14 i_Switch[7]
+PIN_B14 i_Switch[8]
+PIN_F15 i_Switch[9]
+
+PIN_B8 i_Button
+
+PIN_V10 o_PWM
+
+PIN_AB2 o_UART_TX
+PIN_AA2 i_UART_RX
+
+PIN_V9 o_PWMmotor
+PIN_W9 o_DIR
+PIN_W8 o_NOTDIR
