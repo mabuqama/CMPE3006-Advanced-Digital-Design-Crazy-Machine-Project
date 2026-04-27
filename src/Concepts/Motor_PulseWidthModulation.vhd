@@ -9,7 +9,7 @@ entity Motor_PulseWidthModulation is
 	);
 	Port(
 		i_Clock : in STD_LOGIC;
-		i_Duty_Cycle : in UNSIGNED (7 downto 0);
+		i_Duty_Cycle : in STD_LOGIC_VECTOR (7 downto 0);
 		o_PWM_Signal : out STD_LOGIC
 	);
 end Motor_PulseWidthModulation;
@@ -22,7 +22,7 @@ architecture Behavioral of Motor_PulseWidthModulation is
 	signal r_PulseTicks : integer;
 
 	begin
-	r_PulseTicks <= (to_integer(i_Duty_Cycle) * c_PERIOD_TICKS) / 255;
+	r_PulseTicks <= (to_integer(unsigned(i_Duty_Cycle)) * c_PERIOD_TICKS) / 255;
 
 	p_PWM_SIGNAL : process(i_Clock) begin
 		if rising_edge(i_Clock) then

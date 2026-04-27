@@ -159,6 +159,7 @@ project_constraints :
 		\
 		echo "Generating QSF file..."; \
 		echo "set_global_assignment -name TOP_LEVEL_ENTITY $(TOP)" > "$(GENERATED)$(PROJNAME).qsf"; \
+		echo "set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		echo "set_global_assignment -name LAST_QUARTUS_VERSION \"13.0 SP1\"" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		echo "set_global_assignment -name FAMILY \"$(BOARD_FAMILY)\"" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		echo "set_global_assignment -name DEVICE $(CHIP_PART_NUMBER)" >> "$(GENERATED)$(PROJNAME).qsf"; \
@@ -208,6 +209,7 @@ project_constraints :
 		\
 		echo "Generating QSF file..."; \
 		echo "set_global_assignment -name TOP_LEVEL_ENTITY $(TOP)" > "$(GENERATED)$(PROJNAME).qsf"; \
+		echo "set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		echo "set_global_assignment -name LAST_QUARTUS_VERSION \"23.1 STD\"" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		echo "set_global_assignment -name FAMILY \"$(BOARD_FAMILY)\"" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		echo "set_global_assignment -name DEVICE $(CHIP_PART_NUMBER)" >> "$(GENERATED)$(PROJNAME).qsf"; \

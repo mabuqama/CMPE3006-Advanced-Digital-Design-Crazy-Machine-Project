@@ -24,11 +24,8 @@ PIN_F15 i_Switch[9]
 
 PIN_B8 i_Button
 
-PIN_V10 o_PWM
-
 PIN_AB2 o_UART_TX
 PIN_AA2 i_UART_RX
 
-PIN_V9 o_PWMmotor
-PIN_W9 o_DIR
-PIN_W8 o_NOTDIR
+PIN_V10 o_Motor_A_A
+PIN_W10 o_Motor_A_B
