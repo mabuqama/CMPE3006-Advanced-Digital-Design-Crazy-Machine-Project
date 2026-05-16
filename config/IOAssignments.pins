@@ -42,3 +42,5 @@ PIN_W12 o_Stepper_Motor_A[2]
 PIN_AB12 o_Stepper_Motor_A[3]
 
 PIN_AB3 o_Speaker
+
+PIN_Y6 i_LightSensor

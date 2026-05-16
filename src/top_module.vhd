@@ -9,13 +9,16 @@ entity top_module is
 		i_Button    : in  STD_LOGIC;
 		o_UART_TX   : out STD_LOGIC;
 		i_UART_RX   : in  STD_LOGIC;
+		o_Speaker   : out  STD_LOGIC;
 		i_Pressure_Sensor   : in  STD_LOGIC;
+		i_LightSensor : in  STD_LOGIC;
 		o_Motor_A_A  : out STD_LOGIC; 
 		o_Motor_A_B  : out STD_LOGIC;
 		o_Motor_B_A  : out STD_LOGIC; 
 		o_Motor_B_B  : out STD_LOGIC;
 		i_Switch    : in  STD_LOGIC_VECTOR (9 downto 0);
 		o_LEDR      : out STD_LOGIC_VECTOR (9 downto 0)
+
 	);
 end top_module;
 
@@ -46,15 +49,26 @@ architecture Behavioral of top_module is
 		o_LEDR(8) <= o_Motor_A_A;
 		o_LEDR(9) <= o_Motor_A_B;
 		o_LEDR(0) <= not i_Pressure_Sensor;
+		o_LEDR(2) <= not i_LightSensor;
 
 		----------------------------------------------------------------------------------
 		-- Component decleration
 		----------------------------------------------------------------------------------
+		Speaker_init : entity work.Speaker
+			generic map(
+				g_CLOCK_FREQUENCY => C_CLOCK_FREQUENCY,
+				g_PWM_FREQUENCY => 20_000
+			)
+			port map (
+				i_Clock => i_Clock,
+				o_Speaker => o_Speaker
+			);
+
 		Motor_Driver_init : entity work.L9110_2_CHANNEL_MOTOR_DRIVER
 			generic map(
 				g_CLOCK_FREQUENCY => c_CLOCK_FREQUENCY,
-				g_A_PWM_FREQUENCY => c_DC_Motor_PWM_FREQUENCY,
-				g_B_PWM_FREQUENCY => c_DC_Motor_PWM_FREQUENCY
+				g_A_PWM_FREQUENCY => c_DC_MOTOR_PWM_FREQUENCY,
+				g_B_PWM_FREQUENCY => c_DC_MOTOR_PWM_FREQUENCY
 			)
 			port map(
 				i_A_Speed => (others => w_Actuator),
