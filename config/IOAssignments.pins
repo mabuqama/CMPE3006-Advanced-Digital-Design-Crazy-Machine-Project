@@ -22,10 +22,21 @@ PIN_A14 i_Switch[7]
 PIN_B14 i_Switch[8]
 PIN_F15 i_Switch[9]
 
-PIN_B8 i_Button
+PIN_B8 i_Reset
+PIN_A7 i_Button
 
 PIN_AB2 o_UART_TX
 PIN_AA2 i_UART_RX
 
 PIN_V10 o_Motor_A_A
 PIN_W10 o_Motor_A_B
+
+PIN_V9 o_Motor_B_A
+PIN_W9 o_Motor_B_B
+
+PIN_W6 i_Pressure_Sensor
+
+PIN_W5 o_Stepper_Motor_A[0]
+PIN_AA14 o_Stepper_Motor_A[1]
+PIN_W12 o_Stepper_Motor_A[2]
+PIN_AB12 o_Stepper_Motor_A[3]
