@@ -40,3 +40,5 @@ PIN_W5 o_Stepper_Motor_A[0]
 PIN_AA14 o_Stepper_Motor_A[1]
 PIN_W12 o_Stepper_Motor_A[2]
 PIN_AB12 o_Stepper_Motor_A[3]
+
+PIN_AB3 o_Speaker
