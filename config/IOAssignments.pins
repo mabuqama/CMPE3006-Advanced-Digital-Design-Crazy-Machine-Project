@@ -22,25 +22,60 @@ PIN_A14 i_Switch[7]
 PIN_B14 i_Switch[8]
 PIN_F15 i_Switch[9]
 
+PIN_AA1 o_VGA_R[0]
+PIN_V1 o_VGA_R[1]
+PIN_Y2 o_VGA_R[2]
+PIN_Y1 o_VGA_R[3]
+
+PIN_W1 o_VGA_G[0]
+PIN_T2 o_VGA_G[1]
+PIN_R2 o_VGA_G[2]
+PIN_R1 o_VGA_G[3]
+
+PIN_P1 o_VGA_B[0]
+PIN_T1 o_VGA_B[1]
+PIN_P4 o_VGA_B[2]
+PIN_N2 o_VGA_B[3]
+
+PIN_N3 o_VGA_Hsync
+PIN_N1 o_VGA_Vsync
+
 PIN_B8 i_Reset
 PIN_A7 i_Button
 
 PIN_AB2 o_UART_TX
 PIN_AA2 i_UART_RX
 
-PIN_V10 o_Motor_A_A
-PIN_W10 o_Motor_A_B
+PIN_V10 o_Driver_A_A_S1
+PIN_W10 o_Driver_A_B_S1
 
-PIN_V9 o_Motor_B_A
-PIN_W9 o_Motor_B_B
+PIN_V9 o_Driver_B_A_S2
+PIN_W9 o_Driver_B_B_S2
 
-PIN_W6 i_Pressure_Sensor
+PIN_V8 o_Driver_A_A_S3
+PIN_W8 o_Driver_A_B_S3
 
-PIN_W5 o_Stepper_Motor_A[0]
-PIN_AA14 o_Stepper_Motor_A[1]
-PIN_W12 o_Stepper_Motor_A[2]
-PIN_AB12 o_Stepper_Motor_A[3]
+PIN_W5 i_Section_01_Sensor
+PIN_AA15 i_Section_02_Sensor
+PIN_AA14 i_Section_03_Sensor
+PIN_W13 o_Speaker
 
-PIN_AB3 o_Speaker
+PIN_W12 i_End_Stop_X[0]
+PIN_AB12 i_End_Stop_X[1]
 
-PIN_Y6 i_LightSensor
+PIN_AB13 i_End_Stop_Z[0]
+PIN_Y11 i_End_Stop_Z[1]
+
+PIN_AB11 o_Stepper_Motor_X[0]
+PIN_AB10 o_Stepper_Motor_X[1]
+PIN_AA9 o_Stepper_Motor_X[2]
+PIN_AA8 o_Stepper_Motor_X[3]
+
+PIN_W11 o_Stepper_Motor_Z[0]
+PIN_AA10 o_Stepper_Motor_Z[1]
+PIN_Y8 o_Stepper_Motor_Z[2]
+PIN_Y7 o_Stepper_Motor_Z[3]
+
+
+
+

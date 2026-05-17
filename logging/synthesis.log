@@ -15,45 +15,138 @@ Info: Running Quartus Prime Analysis & Synthesis
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Apr 20 21:12:43 2026
+    Info: Processing started: Mon May 18 04:58:34 2026
 Info: Command: quartus_map ./generated/FPGA --parallel=12 --64bit --effort=auto --family="MAX 10" --incremental_compilation=full_incremental_compilation --optimize=balanced --part=10M50DAF484C7G --state_machine_encoding=auto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 12 processors
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd
+    Info (12022): Found design unit 1: Motor_StepperSequencer-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd Line: 20
+    Info (12023): Found entity 1: Motor_StepperSequencer File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd
+    Info (12022): Found design unit 1: VideoGraphicsArray-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd Line: 46
+    Info (12023): Found entity 1: VideoGraphicsArray File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd
+    Info (12022): Found design unit 1: Servo_PulseWidthModulation-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd Line: 19
+    Info (12023): Found entity 1: Servo_PulseWidthModulation File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd
+    Info (12022): Found design unit 1: Motor_PulseWidthModulation-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 17
+    Info (12023): Found entity 1: Motor_PulseWidthModulation File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/PLL.vhd
+    Info (12022): Found design unit 1: pll-SYN File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/PLL.vhd Line: 54
+    Info (12023): Found entity 1: PLL File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/PLL.vhd Line: 43
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd
+    Info (12022): Found design unit 1: VGA_Rainbow-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd Line: 38
+    Info (12023): Found entity 1: VGA_Rainbow File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd
+    Info (12022): Found design unit 1: L9110_2_CHANNEL_MOTOR_DRIVER-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd Line: 25
+    Info (12023): Found entity 1: L9110_2_CHANNEL_MOTOR_DRIVER File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd
+    Info (12022): Found design unit 1: speaker-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 16
+    Info (12023): Found entity 1: Speaker File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd
-    Info (12022): Found design unit 1: top_module-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 20
+    Info (12022): Found design unit 1: top_module-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 39
     Info (12023): Found entity 1: top_module File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 5
 Info (12127): Elaborating entity "top_module" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at top_module.vhd(9): used implicit default value for signal "o_PWM" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 9
 Warning (10541): VHDL Signal Declaration warning at top_module.vhd(10): used implicit default value for signal "o_UART_TX" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
-Warning (10541): VHDL Signal Declaration warning at top_module.vhd(12): used implicit default value for signal "o_PWMmotor" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 12
-Warning (10541): VHDL Signal Declaration warning at top_module.vhd(13): used implicit default value for signal "o_DIR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 13
-Warning (10541): VHDL Signal Declaration warning at top_module.vhd(14): used implicit default value for signal "o_NOTDIR" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 14
+Warning (10036): Verilog HDL or VHDL warning at top_module.vhd(81): object "r_StepperDirectionZ" assigned a value but never read File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 81
+Warning (10492): VHDL Process Statement warning at top_module.vhd(253): signal "w_Reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 253
+Warning (10492): VHDL Process Statement warning at top_module.vhd(256): signal "i_End_Stop_X" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 256
+Warning (10492): VHDL Process Statement warning at top_module.vhd(266): signal "i_End_Stop_X" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 266
+Warning (10492): VHDL Process Statement warning at top_module.vhd(276): signal "i_End_Stop_Z" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 276
+Warning (10492): VHDL Process Statement warning at top_module.vhd(286): signal "i_End_Stop_Z" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 286
+Warning (10873): Using initial value X (don't care) for net "o_LEDR[9..6]" at top_module.vhd(34) File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 34
+Info (12128): Elaborating entity "Speaker" for hierarchy "Speaker:Speaker_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 105
+Info (12128): Elaborating entity "Motor_PulseWidthModulation" for hierarchy "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 33
+Info (12128): Elaborating entity "VGA_Rainbow" for hierarchy "VGA_Rainbow:VGA_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 115
+Info (12128): Elaborating entity "VideoGraphicsArray" for hierarchy "VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd Line: 52
+Info (12128): Elaborating entity "L9110_2_CHANNEL_MOTOR_DRIVER" for hierarchy "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 146
+Info (12128): Elaborating entity "Motor_PulseWidthModulation" for hierarchy "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd Line: 32
+Info (12128): Elaborating entity "Motor_StepperSequencer" for hierarchy "Motor_StepperSequencer:Stepper_Motor_X_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 182
+Info (278001): Inferred 3 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|Mult0" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 25
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|Div0" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 25
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Speaker:Speaker_init|Div0" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 50
+Info (12130): Elaborated megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 25
+Info (12133): Instantiated megafunction "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0" with the following parameter: File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 25
+    Info (12134): Parameter "LPM_WIDTHA" = "8"
+    Info (12134): Parameter "LPM_WIDTHB" = "12"
+    Info (12134): Parameter "LPM_WIDTHP" = "20"
+    Info (12134): Parameter "LPM_WIDTHR" = "20"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "YES"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12131): Elaborated megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0" File: /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 309
+Info (12131): Elaborated megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0" File: /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/multcore.tdf Line: 229
+Info (12131): Elaborated megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]", which is child of megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0" File: /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/mpar_add.tdf Line: 78
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_krg.tdf
+    Info (12023): Found entity 1: add_sub_krg File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/add_sub_krg.tdf Line: 23
+Info (12131): Elaborated megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0" File: /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf Line: 352
+Info (12130): Elaborated megafunction instantiation "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 25
+Info (12133): Instantiated megafunction "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0" with the following parameter: File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 25
+    Info (12134): Parameter "LPM_WIDTHN" = "20"
+    Info (12134): Parameter "LPM_WIDTHD" = "8"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_ntl.tdf
+    Info (12023): Found entity 1: lpm_divide_ntl File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/lpm_divide_ntl.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_plh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_plh File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/sign_div_unsign_plh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_she.tdf
+    Info (12023): Found entity 1: alt_u_div_she File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/alt_u_div_she.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_t3c.tdf
+    Info (12023): Found entity 1: add_sub_t3c File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/add_sub_t3c.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_u3c.tdf
+    Info (12023): Found entity 1: add_sub_u3c File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/add_sub_u3c.tdf Line: 23
+Info (12130): Elaborated megafunction instantiation "Speaker:Speaker_init|lpm_divide:Div0" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 50
+Info (12133): Instantiated megafunction "Speaker:Speaker_init|lpm_divide:Div0" with the following parameter: File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 50
+    Info (12134): Parameter "LPM_WIDTHN" = "26"
+    Info (12134): Parameter "LPM_WIDTHD" = "11"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_7vl.tdf
+    Info (12023): Found entity 1: lpm_divide_7vl File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/lpm_divide_7vl.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/sign_div_unsign_9nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ske.tdf
+    Info (12023): Found entity 1: alt_u_div_ske File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/alt_u_div_ske.tdf Line: 27
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "r_StepperDirectionX" is converted into an equivalent circuit using register "r_StepperDirectionX~_emulated" and latch "r_StepperDirectionX~1" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 80
+    Warning (13310): Register "r_StepperEnableX" is converted into an equivalent circuit using register "r_StepperEnableX~_emulated" and latch "r_StepperEnableX~1" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 74
+    Warning (13310): Register "r_StepperEnableZ" is converted into an equivalent circuit using register "r_StepperEnableZ~_emulated" and latch "r_StepperEnableZ~1" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 75
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "o_PWM" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 9
     Warning (13410): Pin "o_UART_TX" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
-    Warning (13410): Pin "o_PWMmotor" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 12
-    Warning (13410): Pin "o_DIR" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 13
-    Warning (13410): Pin "o_NOTDIR" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 14
+    Warning (13410): Pin "o_Driver_A_B_S1" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 21
+    Warning (13410): Pin "o_Driver_B_B_S2" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 23
+    Warning (13410): Pin "o_Driver_A_B_S3" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 25
+    Warning (13410): Pin "o_LEDR[6]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 34
+    Warning (13410): Pin "o_LEDR[7]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 34
+    Warning (13410): Pin "o_LEDR[8]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 34
+    Warning (13410): Pin "o_LEDR[9]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 34
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 4 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 12 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "i_Clock" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 7
+    Warning (15610): No output dependent on input pin "i_Button" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 9
     Warning (15610): No output dependent on input pin "i_UART_RX" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 11
-    Warning (15610): No output dependent on input pin "i_Switch[0]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[1]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[2]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[3]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[4]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[5]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[6]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[7]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[8]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-    Warning (15610): No output dependent on input pin "i_Switch[9]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
-Info (21057): Implemented 28 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 15 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 402 megabytes
-    Info: Processing ended: Mon Apr 20 21:12:48 2026
-    Info: Elapsed time: 00:00:05
+    Warning (15610): No output dependent on input pin "i_Switch[0]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[1]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[2]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[3]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[4]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[5]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[6]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[7]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[8]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+    Warning (15610): No output dependent on input pin "i_Switch[9]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
+Info (21057): Implemented 1311 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 21 input pins
+    Info (21059): Implemented 40 output pins
+    Info (21061): Implemented 1250 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 35 warnings
+    Info: Peak virtual memory: 517 megabytes
+    Info: Processing ended: Mon May 18 04:58:40 2026
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:11

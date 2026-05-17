@@ -15,18 +15,18 @@ Info: Running Quartus Prime Programmer
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon Apr 20 21:12:56 2026
+    Info: Processing started: Mon May 18 04:58:51 2026
 Info: Command: quartus_pgm -m jtag -o p;./bin/FPGA.sof
-Info (213045): Using programming cable "USB-Blaster [1-2.1]"
-Info (213011): Using programming file ./bin/FPGA.sof with checksum 0x002709B4 for device 10M50DAF484@1
-Info (209060): Started Programmer operation at Mon Apr 20 21:12:56 2026
+Info (213045): Using programming cable "USB-Blaster [1-5.1]"
+Info (213011): Using programming file ./bin/FPGA.sof with checksum 0x0030D3CC for device 10M50DAF484@1
+Info (209060): Started Programmer operation at Mon May 18 04:58:51 2026
 Info (209016): Configuring device index 1
 Info (209017): Device 1 contains JTAG ID code 0x031050DD
 Info (209007): Configuration succeeded -- 1 device(s) configured
 Info (209011): Successfully performed operation(s)
-Info (209061): Ended Programmer operation at Mon Apr 20 21:12:58 2026
+Info (209061): Ended Programmer operation at Mon May 18 04:58:53 2026
 Info: Quartus Prime Programmer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 308 megabytes
-    Info: Processing ended: Mon Apr 20 21:12:58 2026
+    Info: Processing ended: Mon May 18 04:58:53 2026
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:00
