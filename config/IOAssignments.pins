@@ -43,9 +43,6 @@ PIN_N1 o_VGA_Vsync
 PIN_B8 i_Reset
 PIN_A7 i_Button
 
-PIN_AB2 o_UART_TX
-PIN_AA2 i_UART_RX
-
 PIN_V10 o_Driver_A_A_S1
 PIN_W10 o_Driver_A_B_S1
 
@@ -78,4 +75,8 @@ PIN_Y7 o_Stepper_Motor_Z[3]
 
 
 
+
+PIN_AB3 o_Stepper_Motor_Enable
+PIN_AA2 o_Stepper_Motor_Direction
+PIN_AB2 o_Stepper_Motor_Step
 
