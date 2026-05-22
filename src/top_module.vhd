@@ -239,7 +239,7 @@ architecture Behavioral of top_module is
 						r_Section_01 <= s_IDLE;
 						r_Counter_Section_01 <= 0;
 						w_Actuator_S01 <= c_OFF;
-						if i_Switch(0) = c_OFF then
+						if i_Section_01_Sensor = c_OFF then
 							r_Section_01 <= s_BALL_DELAY;
 						end if;
 
@@ -306,6 +306,7 @@ architecture Behavioral of top_module is
 						r_StepperDirectionx <= c_X_LEFT;
 						if i_End_Stop_X(0) = c_ON then
 							r_Section_02 <= s_DC_MOTOR_LOWER;
+							r_StepperEnableX <= c_OFF;
 						end if;
 
 					when s_DC_MOTOR_LOWER =>
@@ -387,7 +388,7 @@ architecture Behavioral of top_module is
 					when s_HOME =>
 						r_Section_03 <= s_HOME;
 						r_StepperEnableZ <= c_ON;
-						r_StepperDirectionZ <= c_Z_LOWER;
+						r_StepperDirectionZ <= c_Z_LIFT;
 						if i_End_Stop_Z(0) = c_ON then
 							r_StepperEnableZ <= c_OFF;
 							r_Section_03 <= s_IDLE;
@@ -397,7 +398,7 @@ architecture Behavioral of top_module is
 						r_Section_03 <= s_STEPPER_LOWER;
 						r_StepperEnableZ <= c_ON;
 						r_StepperDirectionZ <= c_Z_LOWER;
-						if i_End_Stop_X(0) = c_ON then
+						if i_End_Stop_Z(0) = c_ON then
 							r_Section_03 <= s_STEPPER_LIFT;
 						end if;
 
