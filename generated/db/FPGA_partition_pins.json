@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "o_Speaker",
+					"strict" : false
+				},
+				{
+					"name" : "o_Driver_A_A_S1",
+					"strict" : false
+				},
+				{
+					"name" : "o_Driver_B_A_S2",
+					"strict" : false
+				},
+				{
+					"name" : "o_Driver_A_A_S3",
+					"strict" : false
+				},
+				{
+					"name" : "o_Driver_A_B_S3",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_R[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_R[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_R[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_R[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_G[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_G[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_G[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_G[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_B[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_B[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_B[2]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_B[3]",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_Hsync",
+					"strict" : false
+				},
+				{
+					"name" : "o_VGA_Vsync",
+					"strict" : false
+				},
+				{
+					"name" : "o_LEDR[4]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LEDR[5]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LEDR[6]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LEDR[7]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LEDR[8]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LEDR[9]",
+					"strict" : false
+				},
+				{
+					"name" : "o_X_Stepper_Motor_Enable",
+					"strict" : false
+				},
+				{
+					"name" : "o_X_Stepper_Motor_Direction",
+					"strict" : false
+				},
+				{
+					"name" : "o_X_Stepper_Motor_Step",
+					"strict" : false
+				},
+				{
+					"name" : "o_Z_Stepper_Motor_Enable",
+					"strict" : false
+				},
+				{
+					"name" : "o_Z_Stepper_Motor_Direction",
+					"strict" : false
+				},
+				{
+					"name" : "o_Z_Stepper_Motor_Step",
+					"strict" : false
+				},
+				{
+					"name" : "i_Clock",
+					"strict" : false
+				},
+				{
+					"name" : "i_Reset",
+					"strict" : false
+				},
+				{
+					"name" : "i_Section_02_Sensor",
+					"strict" : false
+				},
+				{
+					"name" : "i_End_Stop_X[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Section_03_Sensor",
+					"strict" : false
+				},
+				{
+					"name" : "i_End_Stop_Z[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_End_Stop_X[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Switch[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

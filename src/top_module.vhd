@@ -62,10 +62,21 @@ architecture Behavioral of top_module is
 	type t_Section_01 is (
 			s_IDLE, s_BALL_DELAY, s_ACTIVE
 		);
+	type t_Section_02 is (
+			s_IDLE, s_STEPPER_LEFT, s_DC_MOTOR_LOWER,
+			s_MAGNETIZE, s_DC_MOTOR_LIFT, s_STEPPER_RIGHT,
+			s_DE_MAGNETIZE, s_HOME
+		);
+
+	type t_Section_03 is (
+			s_IDLE, s_STEPPER_LOWER, s_STEPPER_LIFT,
+			s_HOME, s_BALL_DELAY
+		);
 
 	signal r_Section_01 : t_Section_01 := s_IDLE;
-	signal r_Section_02 : t_Section_01 := s_IDLE;
-	signal r_Section_03 : t_Section_01 := s_IDLE;
+	signal r_Section_02 : t_Section_02 := s_HOME;
+	signal r_Section_03 : t_Section_03 := s_HOME;
+
 
 	signal r_Counter_Section_01 : INTEGER range 0 to c_TWO_SECONDS := 0;
 	signal r_Counter_Section_02 : INTEGER range 0 to c_TWO_SECONDS := 0;
@@ -76,6 +87,9 @@ architecture Behavioral of top_module is
 
 	signal r_StepperDirectionX : STD_LOGIC := '0';
 	signal r_StepperDirectionZ : STD_LOGIC := '0';
+
+	signal r_DCEnable : STD_LOGIC := '0';
+	signal r_DCDirection : STD_LOGIC := '0';
 
 	signal w_Actuator_S01 : STD_LOGIC := '0';
 	signal w_ElectroMagnet_S02 : STD_LOGIC := '0';
@@ -170,8 +184,8 @@ architecture Behavioral of top_module is
 				g_B_PWM_FREQUENCY => c_DC_MOTOR_PWM_FREQUENCY
 			)
 			port map(
-				i_A_Speed => (others => w_Motor_S03),
-				i_A_Direction => c_OFF,
+				i_A_Speed => (others => r_DCEnable),
+				i_A_Direction => r_DCDirection,
 				i_B_Speed => (others => c_DONT_CARE),
 				i_B_Direction => c_OFF,
 				i_Clock => i_Clock,
@@ -189,8 +203,8 @@ architecture Behavioral of top_module is
 			)
 			port map (
 				i_Clock => i_Clock,
-				i_Enable  => r_,
-				i_Direction => ,
+				i_Enable  => r_StepperEnableZ,
+				i_Direction => r_StepperDirectionZ,
 				
 				o_Enable => o_Z_Stepper_Motor_Enable,
 				o_Direction => o_Z_Stepper_Motor_Direction,
@@ -206,8 +220,8 @@ architecture Behavioral of top_module is
 			)
 			port map (
 				i_Clock => i_Clock,
-				i_Enable  => i_Switch(6),
-				i_Direction => i_Switch(5),
+				i_Enable  => r_StepperEnableX,
+				i_Direction => r_StepperDirectionX,
 				
 				o_Enable => o_X_Stepper_Motor_Enable,
 				o_Direction => o_X_Stepper_Motor_Direction,
@@ -259,48 +273,155 @@ architecture Behavioral of top_module is
 
 		p_SECTION_02 : process(i_Clock, w_Reset) begin
 			if w_Reset = '1' then
-				r_Section_02 <= s_IDLE;
-				o_Z_Stepper_Motor_Enable <= '0';
-				w_ElectroMagnet_S02 <= '0';
-				r_Section_02 <= s_IDLE;
+				r_Section_02 <= s_HOME;
+				r_StepperEnableX <= c_OFF;
+				w_ElectroMagnet_S02 <= c_OFF;
 
 			elsif rising_edge(i_Clock)then
 				case r_Section_02 is
 					when s_IDLE =>
 						r_Section_02 <= s_IDLE;
-						r_Counter_Section_02 <= 0;
-						w_Motor_S02 <= c_OFF;
+						r_StepperEnableX <= c_ON;
+						r_StepperDirectionX <= c_X_RIGHT;
+						r_DCEnable <= c_OFF;
 						if i_Section_02_Sensor = c_ON then
-							r_Section_02 <= s_BALL_DELAY;
+							r_Section_02 <= s_STEPPER_LEFT;
+						elsif i_End_Stop_X(0) = not c_ON then
+							r_StepperEnableX <= c_OFF;
+						end if;
+						
+					when s_HOME =>
+						r_Section_02 <= s_HOME;
+						r_StepperEnableX <= c_ON;
+						r_StepperDirectionX <= c_X_LEFT;
+						r_DCEnable <= c_OFF;
+						if i_End_Stop_X(0) = c_ON then
+							r_StepperEnableX <= c_OFF;
+							r_Section_02 <= s_IDLE;
 						end if;
 
-					when s_BALL_DELAY =>
-						r_Section_02 <= s_BALL_DELAY;
-						if i_End_Stop_X < c_ON then
-							r_Section_02 <= s_ACTIVE;
-							r_Counter_Section_02 <= r_Counter_Section_03 + 1;
-						else
-							r_Section_02 <= s_BALL_DELAY;
-							r_StepperDirectionX <= c_LEFT;
-							o_X_Stepper_Motor_Enable <= c_ON;
+					when s_STEPPER_LEFT =>
+						r_Section_02 <= s_STEPPER_LEFT;
+						r_StepperEnableX <= c_ON;
+						r_StepperDirectionx <= c_X_LEFT;
+						if i_End_Stop_X(0) = c_ON then
+							r_Section_02 <= s_DC_MOTOR_LOWER;
 						end if;
 
-					when s_ACTIVE =>
-						r_Section_03 <= s_ACTIVE;
-						w_Motor_S03 <= '1';
-						if r_Counter_Section_03 < c_TWO_SECONDS - 1 then
-							r_Section_03 <= s_ACTIVE;
-							r_Counter_Section_03 <= r_Counter_Section_03 + 1;
+					when s_DC_MOTOR_LOWER =>
+						r_Section_02 <= s_DC_MOTOR_LOWER;
+						r_DCDirection <= c_Z_LOWER;
+						r_DCEnable <= c_ON;
+						if r_Counter_Section_02 < c_TWO_SECONDS - 1 then
+							r_Section_02 <= s_DC_MOTOR_LOWER;
+							r_Counter_Section_02 <= r_Counter_Section_02 + 1;
 						else
-							r_Counter_Section_03 <= 0;
-							w_Motor_S03 <= c_OFF;
-							r_Section_03 <= s_IDLE;
+							r_Counter_Section_02 <= 0;
+							r_DCEnable <= c_OFF;
+							r_Section_02 <= s_MAGNETIZE;
+						end if;
+					when s_MAGNETIZE =>
+						r_Section_02 <= s_MAGNETIZE;
+						w_ElectroMagnet_S02 <= c_ON;
+
+						if r_Counter_Section_02 < c_TWO_SECONDS / 2 - 1 then
+							r_Section_02 <= s_MAGNETIZE;
+							r_Counter_Section_02 <= r_Counter_Section_02 + 1;
+						else
+							r_Counter_Section_02 <= 0;
+							r_Section_02 <= s_DC_MOTOR_LIFT;
+						end if;
+					when s_DC_MOTOR_LIFT =>
+						r_Section_02 <= s_DC_MOTOR_LIFT;
+						r_DCDirection <= c_Z_LIFT;
+						r_DCEnable <= c_ON;
+						if r_Counter_Section_02 < c_TWO_SECONDS - 1 then
+							r_Section_02 <= s_DC_MOTOR_LIFT;
+							r_Counter_Section_02 <= r_Counter_Section_02 + 1;
+						else
+							r_Counter_Section_02 <= 0;
+							r_DCEnable <= c_OFF;
+							r_Section_02 <= s_STEPPER_RIGHT;
+						end if;
+
+					when s_STEPPER_RIGHT =>
+						r_Section_02 <= s_STEPPER_RIGHT;
+						r_StepperEnableX <= c_ON;
+						r_StepperDirectionx <= c_X_RIGHT;
+						if i_End_Stop_X(1) = c_ON then
+							r_Section_02 <= s_DE_MAGNETIZE;
+						end if;
+
+					when s_DE_MAGNETIZE=>
+						r_Section_02 <= s_DE_MAGNETIZE;
+						w_ElectroMagnet_S02 <= c_OFF;
+
+						if r_Counter_Section_02 < c_TWO_SECONDS / 2 - 1 then
+							r_Section_02 <= s_DE_MAGNETIZE;
+							r_Counter_Section_02 <= r_Counter_Section_02 + 1;
+						else
+							r_Counter_Section_02 <= 0;
+							r_Section_02 <= s_HOME;
 						end if;
 				end case;
 			end if;
+		end process p_SECTION_02;
 
+		p_SECTION_03 : process(i_Clock, w_Reset) begin
+			if w_Reset = '1' then
+				r_Section_03 <= s_HOME;
+				r_StepperEnableZ <= c_OFF;
+
+			elsif rising_edge(i_Clock)then
+				case r_Section_03 is
+					when s_IDLE =>
+						r_Section_03 <= s_IDLE;
+						r_StepperEnableZ <= c_ON;
+						r_StepperDirectionZ <= c_Z_LOWER;
+						if i_Section_03_Sensor = c_ON then
+							r_Section_03 <= s_STEPPER_LOWER;
+						elsif i_End_Stop_Z(0) = not c_ON then
+							r_StepperEnableZ <= c_OFF;
+						end if;
+						
+					when s_HOME =>
+						r_Section_03 <= s_HOME;
+						r_StepperEnableZ <= c_ON;
+						r_StepperDirectionZ <= c_Z_LOWER;
+						if i_End_Stop_Z(0) = c_ON then
+							r_StepperEnableZ <= c_OFF;
+							r_Section_03 <= s_IDLE;
+						end if;
+
+					when s_STEPPER_LOWER =>
+						r_Section_03 <= s_STEPPER_LOWER;
+						r_StepperEnableZ <= c_ON;
+						r_StepperDirectionZ <= c_Z_LOWER;
+						if i_End_Stop_X(0) = c_ON then
+							r_Section_03 <= s_STEPPER_LIFT;
+						end if;
+
+					when s_STEPPER_LIFT =>
+						r_Section_03 <= s_STEPPER_LIFT;
+						r_StepperEnableZ <= c_ON;
+						r_StepperDirectionZ <= c_Z_LIFT;
+						if i_End_Stop_X(1) = c_ON then
+							r_StepperEnableZ <= c_OFF;
+							r_Section_03 <= s_BALL_DELAY;
+						end if;
+
+					when s_BALL_DELAY =>
+						r_Section_03 <= s_BALL_DELAY;
+						if r_Counter_Section_03 < c_TWO_SECONDS - 1 then
+							r_Section_03 <= s_BALL_DELAY;
+							r_Counter_Section_03 <= r_Counter_Section_03 + 1;
+						else
+							r_Counter_Section_03 <= 0;
+							r_Section_03 <= s_HOME;
+						end if;
+
+
+				end case;
+			end if;
 		end process p_SECTION_03;
-end Behavioral;
-
-
 end Behavioral;

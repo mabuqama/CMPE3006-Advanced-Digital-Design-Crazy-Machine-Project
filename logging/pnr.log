@@ -15,7 +15,7 @@ Info: Running Quartus Prime Fitter
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Mon May 18 04:58:41 2026
+    Info: Processing started: Fri May 22 14:59:41 2026
 Info: Command: quartus_fit ./generated/FPGA --64bit --part=10M50DAF484C7G --parallel=12 --effort=standard --seed=777 --optimize_io_register_for_timing=off --pack_register=normal
 Info: qfit2_default_script.tcl version: #1
 Info: Project  = FPGA
@@ -55,25 +55,23 @@ Info (12825): Data[1]/ASDO dual-purpose pin not reserved
 Info (12825): nCSO dual-purpose pin not reserved
 Info (12825): DCLK dual-purpose pin not reserved
 Warning (15714): Some pins have incomplete I/O assignments. Refer to the I/O Assignment Warnings report for details
-Warning (335093): The Timing Analyzer is analyzing 3 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'FPGA.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332144): No user constrained base clocks found in the design
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
-Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
+Info (332154): The derive_clock_uncertainty command did not apply clock uncertainty to any clock-to-clock transfers.
 Info (332128): Timing requirements not specified -- optimizing circuit to achieve the following default global requirements
     Info (332127): Assuming a default timing requirement
-Info (332111): Found 2 clocks
+Info (332111): Found 1 clocks
     Info (332111):   Period   Clock Name
     Info (332111): ======== ============
     Info (332111):    1.000      i_Clock
-    Info (332111):    1.000      i_Reset
 Info (176353): Automatically promoted node i_Clock~input (placed in PIN P11 (CLK7p, DIFFIO_TX_RX_B20p, DIFFOUT_B20p, High_Speed)) File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 7
     Info (176355): Automatically promoted destinations to use location or clock signal Global Clock CLKCTRL_G19
 Info (176233): Starting register packing
 Info (176222): Fitter will not automatically pack the  registers into I/Os.
 Info (176235): Finished register packing
     Extra Info (176219): No registers were packed into other blocks
-Info (171121): Fitter preparation operations ending: elapsed time is 00:00:01
+Info (171121): Fitter preparation operations ending: elapsed time is 00:00:02
 Info (14896): Fitter has disabled Advanced Physical Optimization because it is not supported for the current family.
 Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
@@ -82,39 +80,38 @@ Info (170137): Fitter placement was successful
 Info (170192): Fitter placement operations ending: elapsed time is 00:00:02
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
-    Info (170196): Router estimated peak interconnect usage is 3% of the available device resources in the region that extends from location X45_Y22 to location X55_Y32
+    Info (170196): Router estimated peak interconnect usage is 5% of the available device resources in the region that extends from location X33_Y11 to location X44_Y21
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
-Info (11888): Total time spent on timing analysis during the Fitter is 0.52 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.43 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
-Warning (169177): 21 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
+Warning (169177): 20 pins must meet Intel FPGA requirements for 3.3-, 3.0-, and 2.5-V interfaces. For more information, refer to AN 447: Interfacing MAX 10 Devices with 3.3/3.0/2.5-V LVTTL/LVCMOS I/O Systems.
     Info (169178): Pin i_Button uses I/O standard 3.3-V LVTTL at A7 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 9
-    Info (169178): Pin i_UART_RX uses I/O standard 3.3-V LVTTL at AA2 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 11
-    Info (169178): Pin i_Switch[0] uses I/O standard 3.3-V LVTTL at C10 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[1] uses I/O standard 3.3-V LVTTL at C11 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[2] uses I/O standard 3.3-V LVTTL at D12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[3] uses I/O standard 3.3-V LVTTL at C12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[4] uses I/O standard 3.3-V LVTTL at A12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[5] uses I/O standard 3.3-V LVTTL at B12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[6] uses I/O standard 3.3-V LVTTL at A13 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[7] uses I/O standard 3.3-V LVTTL at A14 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[8] uses I/O standard 3.3-V LVTTL at B14 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Switch[9] uses I/O standard 3.3-V LVTTL at F15 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 28
-    Info (169178): Pin i_Section_01_Sensor uses I/O standard 3.3-V LVTTL at W5 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 13
-    Info (169178): Pin i_Section_02_Sensor uses I/O standard 3.3-V LVTTL at AA15 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 14
-    Info (169178): Pin i_Section_03_Sensor uses I/O standard 3.3-V LVTTL at AA14 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 15
+    Info (169178): Pin i_Switch[1] uses I/O standard 3.3-V LVTTL at C11 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Switch[2] uses I/O standard 3.3-V LVTTL at D12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Switch[3] uses I/O standard 3.3-V LVTTL at C12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Switch[4] uses I/O standard 3.3-V LVTTL at A12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Switch[5] uses I/O standard 3.3-V LVTTL at B12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Switch[6] uses I/O standard 3.3-V LVTTL at A13 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Switch[7] uses I/O standard 3.3-V LVTTL at A14 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Switch[8] uses I/O standard 3.3-V LVTTL at B14 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Switch[9] uses I/O standard 3.3-V LVTTL at F15 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
+    Info (169178): Pin i_Section_01_Sensor uses I/O standard 3.3-V LVTTL at W5 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 12
+    Info (169178): Pin i_End_Stop_Z[1] uses I/O standard 3.3-V LVTTL at Y11 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 17
     Info (169178): Pin i_Clock uses I/O standard 3.3-V LVTTL at P11 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 7
     Info (169178): Pin i_Reset uses I/O standard 3.3-V LVTTL at B8 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 8
-    Info (169178): Pin i_End_Stop_Z[1] uses I/O standard 3.3-V LVTTL at Y11 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 18
-    Info (169178): Pin i_End_Stop_Z[0] uses I/O standard 3.3-V LVTTL at AB13 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 18
-    Info (169178): Pin i_End_Stop_X[1] uses I/O standard 3.3-V LVTTL at AB12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 17
-    Info (169178): Pin i_End_Stop_X[0] uses I/O standard 3.3-V LVTTL at W12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 17
+    Info (169178): Pin i_Section_02_Sensor uses I/O standard 3.3-V LVTTL at AA15 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 13
+    Info (169178): Pin i_End_Stop_X[0] uses I/O standard 3.3-V LVTTL at W12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 16
+    Info (169178): Pin i_Section_03_Sensor uses I/O standard 3.3-V LVTTL at AA14 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 14
+    Info (169178): Pin i_End_Stop_Z[0] uses I/O standard 3.3-V LVTTL at AB13 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 17
+    Info (169178): Pin i_End_Stop_X[1] uses I/O standard 3.3-V LVTTL at AB12 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 16
+    Info (169178): Pin i_Switch[0] uses I/O standard 3.3-V LVTTL at C10 File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
 Info (144001): Generated suppressed messages file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/FPGA.fit.smsg
-Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1684 megabytes
-    Info: Processing ended: Mon May 18 04:58:49 2026
-    Info: Elapsed time: 00:00:08
-    Info: Total CPU time (on all processors): 00:00:18
+Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 1680 megabytes
+    Info: Processing ended: Fri May 22 14:59:51 2026
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:19
