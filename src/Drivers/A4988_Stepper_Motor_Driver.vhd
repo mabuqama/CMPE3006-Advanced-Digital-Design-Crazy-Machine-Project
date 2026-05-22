@@ -5,23 +5,24 @@ USE IEEE.NUMERIC_STD.ALL;
 entity A4988_Stepper_Motor_Driver is
 	generic(
 		g_CLOCK_FREQUENCY : INTEGER := 50_000_000;
-		g_MIN_DELAY	   : INTEGER := 1_000;
-		g_MAX_DELAY	   : INTEGER := 100_000;
-		g_STEP_PULSE	  : INTEGER := 500
+		g_STEP_RATE_HZ    : INTEGER := 1000;
+		g_STEP_PULSE      : INTEGER := 100   -- 2 µs @ 50 MHz
 	);
 	port(
-		i_Clock	  : in  STD_LOGIC;
-		i_Enable	 : in  STD_LOGIC;
-		i_Direction  : in  STD_LOGIC;
-		i_Speed	  : in  STD_LOGIC_VECTOR(7 downto 0);
+		i_Clock     : in  STD_LOGIC;
+		i_Enable    : in  STD_LOGIC;
+		i_Direction : in  STD_LOGIC;
 
-		o_Enable	 : out STD_LOGIC;
-		o_Direction  : out STD_LOGIC;
-		o_Step	   : out STD_LOGIC
+		o_Enable    : out STD_LOGIC;
+		o_Direction : out STD_LOGIC;
+		o_Step      : out STD_LOGIC
 	);
 end A4988_Stepper_Motor_Driver;
 
 architecture Behavioral of A4988_Stepper_Motor_Driver is
+
+	constant c_STEP_INTERVAL : INTEGER :=
+		g_CLOCK_FREQUENCY / g_STEP_RATE_HZ;
 
 	type t_State is (
 		s_IDLE,
@@ -31,82 +32,83 @@ architecture Behavioral of A4988_Stepper_Motor_Driver is
 
 	signal r_State : t_State := s_IDLE;
 
-	signal r_Delay_Count : INTEGER := 0;
-	signal r_Pulse_Count : INTEGER := 0;
-
-	signal r_Target_Delay : INTEGER := g_MAX_DELAY;
-
-	signal r_Step : STD_LOGIC := '0';
+	signal r_Counter   : INTEGER range 0 to c_STEP_INTERVAL := 0;
+	signal r_Step      : STD_LOGIC := '0';
+	signal r_Direction : STD_LOGIC := '0';
 
 begin
 
-	o_Direction <= i_Direction;
+	----------------------------------------------------------------
+	-- A4988 ENABLE IS ACTIVE LOW
+	----------------------------------------------------------------
+	o_Enable <= not i_Enable;
 
-	o_Enable <= i_Enable;
+	o_Step      <= r_Step;
+	o_Direction <= r_Direction;
 
-	o_Step <= r_Step;
-
-	p_Speed_Map : process(i_Speed)
+	process(i_Clock)
 	begin
+		if rising_edge(i_Clock) then
 
-		r_Target_Delay <= g_MAX_DELAY -
-			(to_integer(unsigned(i_Speed)) *
-			(g_MAX_DELAY - g_MIN_DELAY)) / 255;
+			------------------------------------------------------------
+			-- DISABLED
+			------------------------------------------------------------
+			if i_Enable = '0' then
 
-	end process;
+				r_State   <= s_IDLE;
+				r_Counter <= 0;
+				r_Step    <= '0';
 
-	p_Stepper : process(i_Clock)
-		begin
-			if rising_edge(i_Clock) then
+			else
 
-				if i_Enable = '0' then
+				case r_State is
 
-					r_State <= s_IDLE;
-					r_Step <= '0';
+					----------------------------------------------------
+					-- START STEP
+					----------------------------------------------------
+					when s_IDLE =>
 
-					r_Delay_Count <= 0;
-					r_Pulse_Count <= 0;
+						r_Step    <= '0';
+						r_Counter <= 0;
 
-				else
+						-- Update direction BEFORE step pulse
+						r_Direction <= i_Direction;
 
-					case r_State is
+						r_State <= s_STEP_HIGH;
 
-						when s_IDLE =>
+					----------------------------------------------------
+					-- STEP HIGH
+					----------------------------------------------------
+					when s_STEP_HIGH =>
 
-							r_Step <= '0';
+						r_Step <= '1';
 
-							if r_Delay_Count >= r_Target_Delay then
-								r_Delay_Count <= 0;
-								r_State <= s_STEP_HIGH;
-							else
-								r_Delay_Count <= r_Delay_Count + 1;
-							end if;
+						if r_Counter >= g_STEP_PULSE then
+							r_Counter <= 0;
+							r_State   <= s_STEP_LOW;
+						else
+							r_Counter <= r_Counter + 1;
+						end if;
 
-						when s_STEP_HIGH =>
+					----------------------------------------------------
+					-- STEP LOW
+					----------------------------------------------------
+					when s_STEP_LOW =>
 
-							r_Step <= '1';
+						r_Step <= '0';
 
-							if r_Pulse_Count >= g_STEP_PULSE then
-								r_Pulse_Count <= 0;
-								r_State <= s_STEP_LOW;
-							else
-								r_Pulse_Count <= r_Pulse_Count + 1;
-							end if;
+						if r_Counter >= c_STEP_INTERVAL then
+							r_Counter <= 0;
+							r_State   <= s_STEP_HIGH;
+						else
+							r_Counter <= r_Counter + 1;
+						end if;
 
-						when s_STEP_LOW =>
-
-							r_Step <= '0';
-							r_State <= s_IDLE;
-
-						when others =>
-
-							r_State <= s_IDLE;
-
-					end case;
-
-				end if;
+				end case;
 
 			end if;
+
+		end if;
 	end process;
 
 end Behavioral;

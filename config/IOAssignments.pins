@@ -63,20 +63,10 @@ PIN_AB12 i_End_Stop_X[1]
 PIN_AB13 i_End_Stop_Z[0]
 PIN_Y11 i_End_Stop_Z[1]
 
-PIN_AB11 o_Stepper_Motor_X[0]
-PIN_AB10 o_Stepper_Motor_X[1]
-PIN_AA9 o_Stepper_Motor_X[2]
-PIN_AA8 o_Stepper_Motor_X[3]
+PIN_AB3 o_Z_Stepper_Motor_Enable
+PIN_AA2 o_Z_Stepper_Motor_Direction
+PIN_AB2 o_Z_Stepper_Motor_Step
 
-PIN_W11 o_Stepper_Motor_Z[0]
-PIN_AA10 o_Stepper_Motor_Z[1]
-PIN_Y8 o_Stepper_Motor_Z[2]
-PIN_Y7 o_Stepper_Motor_Z[3]
-
-
-
-
-PIN_AB3 o_Stepper_Motor_Enable
-PIN_AA2 o_Stepper_Motor_Direction
-PIN_AB2 o_Stepper_Motor_Step
-
+PIN_Y3 o_X_Stepper_Motor_Enable
+PIN_Y4 o_X_Stepper_Motor_Direction
+PIN_AA5 o_X_Stepper_Motor_Step
