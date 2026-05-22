@@ -1,0 +1,141 @@
+set_global_assignment -name TOP_LEVEL_ENTITY top_module
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name LAST_QUARTUS_VERSION "23.1std.1 Lite Edition"
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name DEVICE_IO_STANDARD "3.3-V LVTTL"
+set_global_assignment -name CYCLONEII_RESERVE_NCEO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name RESERVE_ASDO_AFTER_CONFIGURATION "USE AS REGULAR IO"
+set_global_assignment -name DEVICE_FILTER_PACKAGE TQFP
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 484
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 7
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name AUTO_PACKED_REGISTERS_STRATIXII NORMAL
+set_global_assignment -name OPTIMIZE_IOC_REGISTER_PLACEMENT_FOR_TIMING OFF
+set_global_assignment -name SEED 777
+set_global_assignment -name FITTER_EFFORT "STANDARD FIT"
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS "AS INPUT TRI-STATED WITH WEAK PULL-UP"
+set_global_assignment -name VHDL_FILE ../src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd
+set_global_assignment -name VHDL_FILE ../src/Drivers/VGA_Rainbow.vhd
+set_global_assignment -name VHDL_FILE ../src/Drivers/A4988_Stepper_Motor_Driver.vhd
+set_global_assignment -name VHDL_FILE ../src/Drivers/TMC2208_Stepper_Motor_Driver.vhd
+set_global_assignment -name VHDL_FILE ../src/Drivers/Speaker.vhd
+set_global_assignment -name VHDL_FILE ../src/Concepts/Motor_StepperSequencer.vhd
+set_global_assignment -name VHDL_FILE ../src/Concepts/Servo_PulseWidthModulation.vhd
+set_global_assignment -name VHDL_FILE ../src/Concepts/VideoGraphicsArray.vhd
+set_global_assignment -name VHDL_FILE ../src/Concepts/Motor_PulseWidthModulation.vhd
+set_global_assignment -name VHDL_FILE ../src/top_module.vhd
+set_location_assignment PIN_P11 -to i_Clock
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Clock
+set_location_assignment PIN_A8 -to o_LEDR[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[0]
+set_location_assignment PIN_A9 -to o_LEDR[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[1]
+set_location_assignment PIN_A10 -to o_LEDR[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[2]
+set_location_assignment PIN_B10 -to o_LEDR[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[3]
+set_location_assignment PIN_D13 -to o_LEDR[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[4]
+set_location_assignment PIN_C13 -to o_LEDR[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[5]
+set_location_assignment PIN_E14 -to o_LEDR[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[6]
+set_location_assignment PIN_D14 -to o_LEDR[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[7]
+set_location_assignment PIN_A11 -to o_LEDR[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[8]
+set_location_assignment PIN_B11 -to o_LEDR[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_LEDR[9]
+set_location_assignment PIN_C10 -to i_Switch[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[0]
+set_location_assignment PIN_C11 -to i_Switch[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[1]
+set_location_assignment PIN_D12 -to i_Switch[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[2]
+set_location_assignment PIN_C12 -to i_Switch[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[3]
+set_location_assignment PIN_A12 -to i_Switch[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[4]
+set_location_assignment PIN_B12 -to i_Switch[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[5]
+set_location_assignment PIN_A13 -to i_Switch[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[6]
+set_location_assignment PIN_A14 -to i_Switch[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[7]
+set_location_assignment PIN_B14 -to i_Switch[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[8]
+set_location_assignment PIN_F15 -to i_Switch[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Switch[9]
+set_location_assignment PIN_AA1 -to o_VGA_R[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_R[0]
+set_location_assignment PIN_V1 -to o_VGA_R[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_R[1]
+set_location_assignment PIN_Y2 -to o_VGA_R[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_R[2]
+set_location_assignment PIN_Y1 -to o_VGA_R[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_R[3]
+set_location_assignment PIN_W1 -to o_VGA_G[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_G[0]
+set_location_assignment PIN_T2 -to o_VGA_G[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_G[1]
+set_location_assignment PIN_R2 -to o_VGA_G[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_G[2]
+set_location_assignment PIN_R1 -to o_VGA_G[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_G[3]
+set_location_assignment PIN_P1 -to o_VGA_B[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_B[0]
+set_location_assignment PIN_T1 -to o_VGA_B[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_B[1]
+set_location_assignment PIN_P4 -to o_VGA_B[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_B[2]
+set_location_assignment PIN_N2 -to o_VGA_B[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_B[3]
+set_location_assignment PIN_N3 -to o_VGA_Hsync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_Hsync
+set_location_assignment PIN_N1 -to o_VGA_Vsync
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_VGA_Vsync
+set_location_assignment PIN_B8 -to i_Reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Reset
+set_location_assignment PIN_A7 -to i_Button
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Button
+set_location_assignment PIN_V10 -to o_Driver_A_A_S1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Driver_A_A_S1
+set_location_assignment PIN_W10 -to o_Driver_A_B_S1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Driver_A_B_S1
+set_location_assignment PIN_V9 -to o_Driver_B_A_S2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Driver_B_A_S2
+set_location_assignment PIN_W9 -to o_Driver_B_B_S2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Driver_B_B_S2
+set_location_assignment PIN_V8 -to o_Driver_A_A_S3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Driver_A_A_S3
+set_location_assignment PIN_W8 -to o_Driver_A_B_S3
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Driver_A_B_S3
+set_location_assignment PIN_W5 -to i_Section_01_Sensor
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Section_01_Sensor
+set_location_assignment PIN_AA15 -to i_Section_02_Sensor
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Section_02_Sensor
+set_location_assignment PIN_AA14 -to i_Section_03_Sensor
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_Section_03_Sensor
+set_location_assignment PIN_W13 -to o_Speaker
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Speaker
+set_location_assignment PIN_W12 -to i_End_Stop_X[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_End_Stop_X[0]
+set_location_assignment PIN_AB12 -to i_End_Stop_X[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_End_Stop_X[1]
+set_location_assignment PIN_AB13 -to i_End_Stop_Z[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_End_Stop_Z[0]
+set_location_assignment PIN_Y11 -to i_End_Stop_Z[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to i_End_Stop_Z[1]
+set_location_assignment PIN_AB3 -to o_Z_Stepper_Motor_Enable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Z_Stepper_Motor_Enable
+set_location_assignment PIN_AA2 -to o_Z_Stepper_Motor_Direction
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Z_Stepper_Motor_Direction
+set_location_assignment PIN_AB2 -to o_Z_Stepper_Motor_Step
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_Z_Stepper_Motor_Step
+set_location_assignment PIN_Y3 -to o_X_Stepper_Motor_Enable
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_X_Stepper_Motor_Enable
+set_location_assignment PIN_Y4 -to o_X_Stepper_Motor_Direction
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_X_Stepper_Motor_Direction
+set_location_assignment PIN_AA5 -to o_X_Stepper_Motor_Step
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to o_X_Stepper_Motor_Step
