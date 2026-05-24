@@ -174,7 +174,7 @@ project_constraints :
 		echo "set_global_assignment -name OPTIMIZE_IOC_REGISTER_PLACEMENT_FOR_TIMING OFF" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		echo "set_global_assignment -name SEED $(SEED)" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		echo "set_global_assignment -name FITTER_EFFORT \"STANDARD FIT\"" >> "$(GENERATED)$(PROJNAME).qsf"; \
-		echo "set_global_assignment -name RESERVE_ALL_UNUSED_PINS \"AS INPUT TRI-STATED WITH WEAK PULL-UP\"" >> "$(GENERATED)$(PROJNAME).qsf"; \
+		echo "set_global_assignment -name RESERVE_ALL_UNUSED_PINS \"AS OUTPUT DRIVING GROUND\"" >> "$(GENERATED)$(PROJNAME).qsf"; \
 		\
 		for file in $(VHDL_SRC); do \
 			echo "set_global_assignment -name VHDL_FILE .$$file" >> "$(GENERATED)$(PROJNAME).qsf"; \

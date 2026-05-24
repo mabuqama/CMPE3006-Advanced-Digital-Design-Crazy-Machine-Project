@@ -8,19 +8,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "o_Driver_A_A_S1",
+					"name" : "o_Driver_S1",
 					"strict" : false
 				},
 				{
-					"name" : "o_Driver_B_A_S2",
+					"name" : "o_Driver_S2",
 					"strict" : false
 				},
 				{
-					"name" : "o_Driver_A_A_S3",
+					"name" : "o_Driver_A_A_S2",
 					"strict" : false
 				},
 				{
-					"name" : "o_Driver_A_B_S3",
+					"name" : "o_Driver_A_B_S2",
 					"strict" : false
 				},
 				{
@@ -80,7 +80,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "o_LEDR[4]",
+					"name" : "o_LEDR[0]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LEDR[1]",
+					"strict" : false
+				},
+				{
+					"name" : "o_LEDR[2]",
 					"strict" : false
 				},
 				{
@@ -97,10 +105,6 @@
 				},
 				{
 					"name" : "o_LEDR[8]",
-					"strict" : false
-				},
-				{
-					"name" : "o_LEDR[9]",
 					"strict" : false
 				},
 				{
@@ -128,11 +132,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "i_Clock",
-					"strict" : false
-				},
-				{
-					"name" : "i_Reset",
+					"name" : "i_Section_01_Sensor",
 					"strict" : false
 				},
 				{
@@ -140,15 +140,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "i_End_Stop_X[0]",
-					"strict" : false
-				},
-				{
 					"name" : "i_Section_03_Sensor",
 					"strict" : false
 				},
 				{
-					"name" : "i_End_Stop_Z[0]",
+					"name" : "i_End_Stop_X[0]",
 					"strict" : false
 				},
 				{
@@ -156,7 +152,19 @@
 					"strict" : false
 				},
 				{
-					"name" : "i_Switch[0]",
+					"name" : "i_End_Stop_Z[0]",
+					"strict" : false
+				},
+				{
+					"name" : "i_End_Stop_Z[1]",
+					"strict" : false
+				},
+				{
+					"name" : "i_Clock",
+					"strict" : false
+				},
+				{
+					"name" : "i_Reset",
 					"strict" : false
 				}
 			]

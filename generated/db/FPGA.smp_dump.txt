@@ -19,22 +19,11 @@ r_Section_02.s_DE_MAGNETIZE 0 1 0 0 0 0 0 1
 r_Section_02.s_IDLE 1 0 0 0 0 0 0 1 
 
 State Machine - |top_module|r_Section_01
-Name r_Section_01.s_ACTIVE r_Section_01.s_BALL_DELAY r_Section_01.s_IDLE 
-r_Section_01.s_IDLE 0 0 0 
-r_Section_01.s_BALL_DELAY 0 1 1 
-r_Section_01.s_ACTIVE 1 0 1 
-
-State Machine - |top_module|A4988_Stepper_Motor_Driver:A4988_Stepper_Motor_Driver_X_init|r_State
-Name r_State.s_STEP_LOW r_State.s_STEP_HIGH r_State.s_IDLE 
-r_State.s_IDLE 0 0 0 
-r_State.s_STEP_HIGH 0 1 1 
-r_State.s_STEP_LOW 1 0 1 
-
-State Machine - |top_module|TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init|r_State
-Name r_State.s_STEP_LOW r_State.s_STEP_HIGH r_State.s_IDLE 
-r_State.s_IDLE 0 0 0 
-r_State.s_STEP_HIGH 0 1 1 
-r_State.s_STEP_LOW 1 0 1 
+Name r_Section_01.s_COOLDOWN r_Section_01.s_ACTIVE r_Section_01.s_BALL_DELAY r_Section_01.s_IDLE 
+r_Section_01.s_IDLE 0 0 0 0 
+r_Section_01.s_BALL_DELAY 0 0 1 1 
+r_Section_01.s_ACTIVE 0 1 0 1 
+r_Section_01.s_COOLDOWN 1 0 0 1 
 
 State Machine - |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_V_State
 Name r_V_State.s_IDLE r_V_State.s_V_SYNC r_V_State.s_BOTTOM_BORDER r_V_State.s_FRONT_PORCH r_V_State.s_ACTIVE_VIDEO r_V_State.s_BACK_PORCH r_V_State.s_TOP_BORDER 

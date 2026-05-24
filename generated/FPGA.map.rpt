@@ -1,5 +1,5 @@
 Analysis & Synthesis report for FPGA
-Fri May 22 14:59:41 2026
+Sun May 24 19:34:44 2026
 Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
 
 
@@ -16,34 +16,29 @@ Quartus Prime Version 23.1std.1 Build 993 05/14/2024 SC Lite Edition
   8. State Machine - |top_module|r_Section_03
   9. State Machine - |top_module|r_Section_02
  10. State Machine - |top_module|r_Section_01
- 11. State Machine - |top_module|A4988_Stepper_Motor_Driver:A4988_Stepper_Motor_Driver_X_init|r_State
- 12. State Machine - |top_module|TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init|r_State
- 13. State Machine - |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_V_State
- 14. State Machine - |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_H_State
- 15. Registers Removed During Synthesis
- 16. General Register Statistics
- 17. Multiplexer Restructuring Statistics (Restructuring Performed)
- 18. Parameter Settings for User Entity Instance: Speaker:Speaker_init
- 19. Parameter Settings for User Entity Instance: Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init
- 20. Parameter Settings for User Entity Instance: VGA_Rainbow:VGA_init
- 21. Parameter Settings for User Entity Instance: VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init
- 22. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init
- 23. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init
- 24. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init
- 25. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init
- 26. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init
- 27. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_B_init
- 28. Parameter Settings for User Entity Instance: TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init
- 29. Parameter Settings for User Entity Instance: A4988_Stepper_Motor_Driver:A4988_Stepper_Motor_Driver_X_init
- 30. Parameter Settings for Inferred Entity Instance: Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0
- 31. Parameter Settings for Inferred Entity Instance: Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0
- 32. Parameter Settings for Inferred Entity Instance: Speaker:Speaker_init|lpm_divide:Div0
- 33. lpm_mult Parameter Settings by Entity Instance
- 34. Port Connectivity Checks: "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init"
- 35. Port Connectivity Checks: "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init"
- 36. Post-Synthesis Netlist Statistics for Top Partition
- 37. Elapsed Time Per Partition
- 38. Analysis & Synthesis Messages
+ 11. State Machine - |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_V_State
+ 12. State Machine - |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_H_State
+ 13. Registers Removed During Synthesis
+ 14. General Register Statistics
+ 15. Inverted Register Statistics
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Parameter Settings for User Entity Instance: Speaker:Speaker_init
+ 18. Parameter Settings for User Entity Instance: Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init
+ 19. Parameter Settings for User Entity Instance: VGA_Rainbow:VGA_init
+ 20. Parameter Settings for User Entity Instance: VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init
+ 21. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init
+ 22. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init
+ 23. Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init
+ 24. Parameter Settings for User Entity Instance: TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_01
+ 25. Parameter Settings for User Entity Instance: TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_02
+ 26. Parameter Settings for Inferred Entity Instance: Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0
+ 27. Parameter Settings for Inferred Entity Instance: Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0
+ 28. Parameter Settings for Inferred Entity Instance: Speaker:Speaker_init|lpm_divide:Div0
+ 29. lpm_mult Parameter Settings by Entity Instance
+ 30. Port Connectivity Checks: "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init"
+ 31. Post-Synthesis Netlist Statistics for Top Partition
+ 32. Elapsed Time Per Partition
+ 33. Analysis & Synthesis Messages
 
 
 
@@ -70,16 +65,16 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri May 22 14:59:41 2026          ;
+; Analysis & Synthesis Status        ; Successful - Sun May 24 19:34:44 2026          ;
 ; Quartus Prime Version              ; 23.1std.1 Build 993 05/14/2024 SC Lite Edition ;
 ; Revision Name                      ; FPGA                                           ;
 ; Top-level Entity Name              ; top_module                                     ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 1,231                                          ;
-;     Total combinational functions  ; 1,229                                          ;
-;     Dedicated logic registers      ; 413                                            ;
-; Total registers                    ; 413                                            ;
-; Total pins                         ; 57                                             ;
+; Total logic elements               ; 1,245                                          ;
+;     Total combinational functions  ; 1,242                                          ;
+;     Dedicated logic registers      ; 411                                            ;
+; Total registers                    ; 411                                            ;
+; Total pins                         ; 55                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
 ; Embedded Multiplier 9-bit elements ; 0                                              ;
@@ -180,7 +175,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 32          ;
+; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -188,8 +183,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
+;     Processor 3            ;   0.1%      ;
 ;     Processor 4            ;   0.0%      ;
 ;     Processor 5            ;   0.0%      ;
 ;     Processor 6            ;   0.0%      ;
@@ -204,13 +199,12 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path                ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                                                        ; Library ;
 +-------------------------------------------------+-----------------+------------------------------+-------------------------------------------------------------------------------------------------------------------------------------+---------+
+; ../src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd ;         ;
+; ../src/Drivers/VGA_Rainbow.vhd                  ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd                  ;         ;
+; ../src/Drivers/TMC2208_Stepper_Motor_Driver.vhd ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/TMC2208_Stepper_Motor_Driver.vhd ;         ;
+; ../src/Drivers/Speaker.vhd                      ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd                      ;         ;
 ; ../src/Concepts/VideoGraphicsArray.vhd          ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd          ;         ;
 ; ../src/Concepts/Motor_PulseWidthModulation.vhd  ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd  ;         ;
-; ../src/Drivers/VGA_Rainbow.vhd                  ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd                  ;         ;
-; ../src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd ;         ;
-; ../src/Drivers/Speaker.vhd                      ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd                      ;         ;
-; ../src/Drivers/A4988_Stepper_Motor_Driver.vhd   ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/A4988_Stepper_Motor_Driver.vhd   ;         ;
-; ../src/Drivers/TMC2208_Stepper_Motor_Driver.vhd ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/TMC2208_Stepper_Motor_Driver.vhd ;         ;
 ; ../src/top_module.vhd                           ; yes             ; User VHDL File               ; /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd                           ;         ;
 ; lpm_mult.tdf                                    ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/lpm_mult.tdf                                                            ;         ;
 ; aglobal231.inc                                  ; yes             ; Megafunction                 ; /opt/intelFPGA_lite/23.1std/quartus/libraries/megafunctions/aglobal231.inc                                                          ;         ;
@@ -253,64 +247,61 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 1,231         ;
+; Estimated Total logic elements              ; 1,245         ;
 ;                                             ;               ;
-; Total combinational functions               ; 1229          ;
+; Total combinational functions               ; 1242          ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 298           ;
-;     -- 3 input functions                    ; 391           ;
-;     -- <=2 input functions                  ; 540           ;
+;     -- 4 input functions                    ; 319           ;
+;     -- 3 input functions                    ; 381           ;
+;     -- <=2 input functions                  ; 542           ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 626           ;
+;     -- normal mode                          ; 639           ;
 ;     -- arithmetic mode                      ; 603           ;
 ;                                             ;               ;
-; Total registers                             ; 413           ;
-;     -- Dedicated logic registers            ; 413           ;
+; Total registers                             ; 411           ;
+;     -- Dedicated logic registers            ; 411           ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 57            ;
+; I/O pins                                    ; 55            ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; i_Clock~input ;
-; Maximum fan-out                             ; 413           ;
-; Total fan-out                               ; 4745          ;
-; Average fan-out                             ; 2.70          ;
+; Maximum fan-out                             ; 411           ;
+; Total fan-out                               ; 4801          ;
+; Average fan-out                             ; 2.72          ;
 +---------------------------------------------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                               ;
-+-----------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; Compilation Hierarchy Node                                            ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                    ; Entity Name                  ; Library Name ;
-+-----------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
-; |top_module                                                           ; 1229 (148)          ; 413 (105)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 57   ; 0            ; 0          ; |top_module                                                                                                                                                            ; top_module                   ; work         ;
-;    |A4988_Stepper_Motor_Driver:A4988_Stepper_Motor_Driver_X_init|     ; 46 (46)             ; 22 (22)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|A4988_Stepper_Motor_Driver:A4988_Stepper_Motor_Driver_X_init                                                                                               ; A4988_Stepper_Motor_Driver   ; work         ;
-;    |L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|                 ; 52 (0)              ; 33 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init                                                                                                           ; L9110_2_CHANNEL_MOTOR_DRIVER ; work         ;
-;       |Motor_PulseWidthModulation:PWM_A_init|                         ; 49 (49)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init                                                                     ; Motor_PulseWidthModulation   ; work         ;
-;       |Motor_PulseWidthModulation:PWM_B_init|                         ; 3 (3)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init                                                                     ; Motor_PulseWidthModulation   ; work         ;
-;    |L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|                 ; 3 (2)               ; 1 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init                                                                                                           ; L9110_2_CHANNEL_MOTOR_DRIVER ; work         ;
-;       |Motor_PulseWidthModulation:PWM_A_init|                         ; 1 (1)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init                                                                     ; Motor_PulseWidthModulation   ; work         ;
-;    |Speaker:Speaker_init|                                             ; 709 (115)           ; 104 (71)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init                                                                                                                                       ; Speaker                      ; work         ;
-;       |Motor_PulseWidthModulation:PWM_init|                           ; 211 (68)            ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init                                                                                                   ; Motor_PulseWidthModulation   ; work         ;
-;          |lpm_divide:Div0|                                            ; 125 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0                                                                                   ; lpm_divide                   ; work         ;
-;             |lpm_divide_ntl:auto_generated|                           ; 125 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0|lpm_divide_ntl:auto_generated                                                     ; lpm_divide_ntl               ; work         ;
-;                |sign_div_unsign_plh:divider|                          ; 125 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0|lpm_divide_ntl:auto_generated|sign_div_unsign_plh:divider                         ; sign_div_unsign_plh          ; work         ;
-;                   |alt_u_div_she:divider|                             ; 125 (125)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0|lpm_divide_ntl:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider   ; alt_u_div_she                ; work         ;
-;          |lpm_mult:Mult0|                                             ; 18 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0                                                                                    ; lpm_mult                     ; work         ;
-;             |multcore:mult_core|                                      ; 18 (5)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core                                                                 ; multcore                     ; work         ;
-;                |mpar_add:padder|                                      ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                 ; mpar_add                     ; work         ;
-;                   |lpm_add_sub:adder[0]|                              ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ; lpm_add_sub                  ; work         ;
-;                      |add_sub_frg:auto_generated|                     ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_frg:auto_generated ; add_sub_frg                  ; work         ;
-;       |lpm_divide:Div0|                                               ; 383 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|lpm_divide:Div0                                                                                                                       ; lpm_divide                   ; work         ;
-;          |lpm_divide_7vl:auto_generated|                              ; 383 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|lpm_divide:Div0|lpm_divide_7vl:auto_generated                                                                                         ; lpm_divide_7vl               ; work         ;
-;             |sign_div_unsign_9nh:divider|                             ; 383 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|lpm_divide:Div0|lpm_divide_7vl:auto_generated|sign_div_unsign_9nh:divider                                                             ; sign_div_unsign_9nh          ; work         ;
-;                |alt_u_div_ske:divider|                                ; 383 (383)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|lpm_divide:Div0|lpm_divide_7vl:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_ske:divider                                       ; alt_u_div_ske                ; work         ;
-;    |TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init| ; 42 (42)             ; 19 (19)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init                                                                                           ; TMC2208_Stepper_Motor_Driver ; work         ;
-;    |VGA_Rainbow:VGA_init|                                             ; 229 (49)            ; 129 (19)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|VGA_Rainbow:VGA_init                                                                                                                                       ; VGA_Rainbow                  ; work         ;
-;       |VideoGraphicsArray:VGA_init|                                   ; 180 (180)           ; 110 (110)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init                                                                                                           ; VideoGraphicsArray           ; work         ;
-+-----------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                                                                  ;
++--------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
+; Compilation Hierarchy Node                                               ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                                                                                                                    ; Entity Name                  ; Library Name ;
++--------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
+; |top_module                                                              ; 1242 (197)          ; 411 (110)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 55   ; 0            ; 0          ; |top_module                                                                                                                                                            ; top_module                   ; work         ;
+;    |L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|                    ; 53 (2)              ; 32 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init                                                                                                           ; L9110_2_CHANNEL_MOTOR_DRIVER ; work         ;
+;       |Motor_PulseWidthModulation:PWM_A_init|                            ; 51 (51)             ; 32 (32)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init                                                                     ; Motor_PulseWidthModulation   ; work         ;
+;    |Speaker:Speaker_init|                                                ; 709 (115)           ; 104 (71)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init                                                                                                                                       ; Speaker                      ; work         ;
+;       |Motor_PulseWidthModulation:PWM_init|                              ; 211 (68)            ; 33 (33)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init                                                                                                   ; Motor_PulseWidthModulation   ; work         ;
+;          |lpm_divide:Div0|                                               ; 125 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0                                                                                   ; lpm_divide                   ; work         ;
+;             |lpm_divide_ntl:auto_generated|                              ; 125 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0|lpm_divide_ntl:auto_generated                                                     ; lpm_divide_ntl               ; work         ;
+;                |sign_div_unsign_plh:divider|                             ; 125 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0|lpm_divide_ntl:auto_generated|sign_div_unsign_plh:divider                         ; sign_div_unsign_plh          ; work         ;
+;                   |alt_u_div_she:divider|                                ; 125 (125)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_divide:Div0|lpm_divide_ntl:auto_generated|sign_div_unsign_plh:divider|alt_u_div_she:divider   ; alt_u_div_she                ; work         ;
+;          |lpm_mult:Mult0|                                                ; 18 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0                                                                                    ; lpm_mult                     ; work         ;
+;             |multcore:mult_core|                                         ; 18 (5)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core                                                                 ; multcore                     ; work         ;
+;                |mpar_add:padder|                                         ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder                                                 ; mpar_add                     ; work         ;
+;                   |lpm_add_sub:adder[0]|                                 ; 13 (0)              ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]                            ; lpm_add_sub                  ; work         ;
+;                      |add_sub_frg:auto_generated|                        ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder|lpm_add_sub:adder[0]|add_sub_frg:auto_generated ; add_sub_frg                  ; work         ;
+;       |lpm_divide:Div0|                                                  ; 383 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|lpm_divide:Div0                                                                                                                       ; lpm_divide                   ; work         ;
+;          |lpm_divide_7vl:auto_generated|                                 ; 383 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|lpm_divide:Div0|lpm_divide_7vl:auto_generated                                                                                         ; lpm_divide_7vl               ; work         ;
+;             |sign_div_unsign_9nh:divider|                                ; 383 (0)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|lpm_divide:Div0|lpm_divide_7vl:auto_generated|sign_div_unsign_9nh:divider                                                             ; sign_div_unsign_9nh          ; work         ;
+;                |alt_u_div_ske:divider|                                   ; 383 (383)           ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|Speaker:Speaker_init|lpm_divide:Div0|lpm_divide_7vl:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_ske:divider                                       ; alt_u_div_ske                ; work         ;
+;    |TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_01| ; 27 (27)             ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_01                                                                                        ; TMC2208_Stepper_Motor_Driver ; work         ;
+;    |TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_02| ; 27 (27)             ; 18 (18)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_02                                                                                        ; TMC2208_Stepper_Motor_Driver ; work         ;
+;    |VGA_Rainbow:VGA_init|                                                ; 229 (49)            ; 129 (19)                  ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|VGA_Rainbow:VGA_init                                                                                                                                       ; VGA_Rainbow                  ; work         ;
+;       |VideoGraphicsArray:VGA_init|                                      ; 180 (180)           ; 110 (110)                 ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init                                                                                                           ; VideoGraphicsArray           ; work         ;
++--------------------------------------------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -346,39 +337,16 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------------------------+
-; State Machine - |top_module|r_Section_01                                                            ;
-+---------------------------+-----------------------+---------------------------+---------------------+
-; Name                      ; r_Section_01.s_ACTIVE ; r_Section_01.s_BALL_DELAY ; r_Section_01.s_IDLE ;
-+---------------------------+-----------------------+---------------------------+---------------------+
-; r_Section_01.s_IDLE       ; 0                     ; 0                         ; 0                   ;
-; r_Section_01.s_BALL_DELAY ; 0                     ; 1                         ; 1                   ;
-; r_Section_01.s_ACTIVE     ; 1                     ; 0                         ; 1                   ;
-+---------------------------+-----------------------+---------------------------+---------------------+
-
-
-Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------+
-; State Machine - |top_module|A4988_Stepper_Motor_Driver:A4988_Stepper_Motor_Driver_X_init|r_State ;
-+---------------------+--------------------+---------------------+---------------------------------+
-; Name                ; r_State.s_STEP_LOW ; r_State.s_STEP_HIGH ; r_State.s_IDLE                  ;
-+---------------------+--------------------+---------------------+---------------------------------+
-; r_State.s_IDLE      ; 0                  ; 0                   ; 0                               ;
-; r_State.s_STEP_HIGH ; 0                  ; 1                   ; 1                               ;
-; r_State.s_STEP_LOW  ; 1                  ; 0                   ; 1                               ;
-+---------------------+--------------------+---------------------+---------------------------------+
-
-
-Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------------+
-; State Machine - |top_module|TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init|r_State ;
-+---------------------+--------------------+---------------------+-------------------------------------+
-; Name                ; r_State.s_STEP_LOW ; r_State.s_STEP_HIGH ; r_State.s_IDLE                      ;
-+---------------------+--------------------+---------------------+-------------------------------------+
-; r_State.s_IDLE      ; 0                  ; 0                   ; 0                                   ;
-; r_State.s_STEP_HIGH ; 0                  ; 1                   ; 1                                   ;
-; r_State.s_STEP_LOW  ; 1                  ; 0                   ; 1                                   ;
-+---------------------+--------------------+---------------------+-------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top_module|r_Section_01                                                                                      ;
++---------------------------+-------------------------+-----------------------+---------------------------+---------------------+
+; Name                      ; r_Section_01.s_COOLDOWN ; r_Section_01.s_ACTIVE ; r_Section_01.s_BALL_DELAY ; r_Section_01.s_IDLE ;
++---------------------------+-------------------------+-----------------------+---------------------------+---------------------+
+; r_Section_01.s_IDLE       ; 0                       ; 0                     ; 0                         ; 0                   ;
+; r_Section_01.s_BALL_DELAY ; 0                       ; 0                     ; 1                         ; 1                   ;
+; r_Section_01.s_ACTIVE     ; 0                       ; 1                     ; 0                         ; 1                   ;
+; r_Section_01.s_COOLDOWN   ; 1                       ; 0                     ; 0                         ; 1                   ;
++---------------------------+-------------------------+-----------------------+---------------------------+---------------------+
 
 
 Encoding Type:  One-Hot
@@ -413,86 +381,25 @@ Encoding Type:  One-Hot
 +--------------------------+------------------+--------------------+--------------------------+-------------------------+--------------------------+------------------------+-------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                                                                              ;
-+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-; Register name                                                                                            ; Reason for Removal                                                                                                   ;
-+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-; Speaker:Speaker_init|r_PWMDuty[0,2]                                                                      ; Stuck at GND due to stuck port data_in                                                                               ;
-; Speaker:Speaker_init|r_PWMDuty[3,6]                                                                      ; Merged with Speaker:Speaker_init|r_PWMDuty[7]                                                                        ;
-; Speaker:Speaker_init|r_PWMDuty[1,4]                                                                      ; Merged with Speaker:Speaker_init|r_PWMDuty[5]                                                                        ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[31] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[31] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[31] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[31] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[30] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[30] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[30] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[30] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[29] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[29] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[29] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[29] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[28] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[28] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[28] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[28] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[27] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[27] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[27] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[27] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[26] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[26] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[26] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[26] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[25] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[25] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[25] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[25] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[24] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[24] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[24] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[24] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[23] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[23] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[23] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[23] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[22] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[22] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[22] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[22] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[21] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[21] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[21] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[21] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[20] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[20] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[20] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[20] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[19] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[19] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[19] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[19] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[18] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[18] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[18] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[18] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[17] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[17] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[17] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[17] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[16] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[16] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[16] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[16] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[15] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[15] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[15] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[15] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[14] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[14] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[14] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[14] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[13] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[13] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[13] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[13] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[12] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[12] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[12] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[12] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[11] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[11] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[11] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[11] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[10] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[10] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[10] ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[10] ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[9]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[9]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[9]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[9]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[8]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[8]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[8]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[8]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[7]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[7]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[7]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[7]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[6]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[6]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[6]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[6]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[5]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[5]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[5]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[5]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[4]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[4]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[4]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[4]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[3]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[3]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[3]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[3]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[2]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[2]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[2]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[2]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[1]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[1]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[1]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[1]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_B_init|r_Clock_Count[0]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[0]  ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[0]  ; Merged with L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[0]  ;
-; VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_V_State.s_IDLE                                        ; Stuck at GND due to stuck port data_in                                                                               ;
-; VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_H_State.s_IDLE                                        ; Stuck at GND due to stuck port data_in                                                                               ;
-; VGA_Rainbow:VGA_init|r_Shift[0]                                                                          ; Merged with Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|r_Clock_Count[0]                                ;
-; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[0]  ; Merged with Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|r_Clock_Count[0]                                ;
-; TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init|r_State.s_IDLE                          ; Lost fanout                                                                                                          ;
-; VGA_Rainbow:VGA_init|r_Shift[8,9]                                                                        ; Lost fanout                                                                                                          ;
-; Total Number of Removed Registers = 77                                                                   ;                                                                                                                      ;
-+----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                              ;
++---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+; Register name                                                                                           ; Reason for Removal                                                                    ;
++---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
+; r_DCEnable[0..5]                                                                                        ; Stuck at GND due to stuck port data_in                                                ;
+; Speaker:Speaker_init|r_PWMDuty[0,2]                                                                     ; Stuck at GND due to stuck port data_in                                                ;
+; Speaker:Speaker_init|r_PWMDuty[3,6]                                                                     ; Merged with Speaker:Speaker_init|r_PWMDuty[7]                                         ;
+; Speaker:Speaker_init|r_PWMDuty[1,4]                                                                     ; Merged with Speaker:Speaker_init|r_PWMDuty[5]                                         ;
+; r_DCEnable[7]                                                                                           ; Merged with r_DCEnable[6]                                                             ;
+; r_Section_02.s_DE_MAGNETIZE                                                                             ; Stuck at GND due to stuck port data_in                                                ;
+; r_Section_03.s_STEPPER_LOWER                                                                            ; Stuck at GND due to stuck port data_in                                                ;
+; VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_V_State.s_IDLE                                       ; Stuck at GND due to stuck port data_in                                                ;
+; VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_H_State.s_IDLE                                       ; Stuck at GND due to stuck port data_in                                                ;
+; VGA_Rainbow:VGA_init|r_Shift[0]                                                                         ; Merged with Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|r_Clock_Count[0] ;
+; L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init|r_Clock_Count[0] ; Merged with Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|r_Clock_Count[0] ;
+; VGA_Rainbow:VGA_init|r_Shift[8,9]                                                                       ; Lost fanout                                                                           ;
+; Total Number of Removed Registers = 21                                                                  ;                                                                                       ;
++---------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -500,31 +407,50 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 413   ;
-; Number of registers using Synchronous Clear  ; 246   ;
-; Number of registers using Synchronous Load   ; 30    ;
-; Number of registers using Asynchronous Clear ; 19    ;
+; Total registers                              ; 411   ;
+; Number of registers using Synchronous Clear  ; 244   ;
+; Number of registers using Synchronous Load   ; 3     ;
+; Number of registers using Asynchronous Clear ; 108   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 137   ;
+; Number of registers using Clock Enable       ; 105   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top_module|VGA_Rainbow:VGA_init|r_RGB_B[0]                                ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top_module|VGA_Rainbow:VGA_init|r_RGB_G[3]                                ;
-; 5:1                ; 27 bits   ; 81 LEs        ; 27 LEs               ; 54 LEs                 ; Yes        ; |top_module|r_Counter_Section_02[10]                                       ;
-; 9:1                ; 32 bits   ; 192 LEs       ; 32 LEs               ; 160 LEs                ; Yes        ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_H_Count[21] ;
-; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; Yes        ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_V_Count[14] ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|Selector42    ;
-; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|Selector3     ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|Selector44    ;
-; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|Selector39    ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; r_StepperDirectionX                    ; 2       ;
+; Total number of inverted registers = 1 ;         ;
++----------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; Yes        ; |top_module|VGA_Rainbow:VGA_init|r_RGB_B[3]                                                   ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_module|TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_02|r_Counter[10] ;
+; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |top_module|TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_01|r_Counter[6]  ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; Yes        ; |top_module|VGA_Rainbow:VGA_init|r_RGB_G[1]                                                   ;
+; 5:1                ; 27 bits   ; 81 LEs        ; 27 LEs               ; 54 LEs                 ; Yes        ; |top_module|r_Counter_Section_01[16]                                                          ;
+; 7:1                ; 27 bits   ; 108 LEs       ; 27 LEs               ; 81 LEs                 ; Yes        ; |top_module|r_Counter_Section_02[17]                                                          ;
+; 9:1                ; 32 bits   ; 192 LEs       ; 32 LEs               ; 160 LEs                ; Yes        ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_H_Count[16]                    ;
+; 8:1                ; 32 bits   ; 160 LEs       ; 32 LEs               ; 128 LEs                ; Yes        ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|r_V_Count[5]                     ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top_module|Selector29                                                                        ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; No         ; |top_module|Selector28                                                                        ;
+; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; No         ; |top_module|Selector109                                                                       ;
+; 10:1               ; 2 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top_module|Selector105                                                                       ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|Selector45                       ;
+; 6:1                ; 4 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|Selector3                        ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|Selector40                       ;
+; 7:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |top_module|VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init|Selector39                       ;
+; 10:1               ; 3 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; No         ; |top_module|Selector39                                                                        ;
+; 12:1               ; 2 bits    ; 16 LEs        ; 4 LEs                ; 12 LEs                 ; No         ; |top_module|Selector41                                                                        ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------------------------------------------+
 
 
 +-------------------------------------------------------------------+
@@ -630,61 +556,27 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init ;
-+-------------------+----------+----------------------------------------------------------------+
-; Parameter Name    ; Value    ; Type                                                           ;
-+-------------------+----------+----------------------------------------------------------------+
-; g_clock_frequency ; 50000000 ; Signed Integer                                                 ;
-; g_a_pwm_frequency ; 200000   ; Signed Integer                                                 ;
-; g_b_pwm_frequency ; 200000   ; Signed Integer                                                 ;
-+-------------------+----------+----------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_01 ;
++-------------------+----------+-----------------------------------------------------------------------------------+
+; Parameter Name    ; Value    ; Type                                                                              ;
++-------------------+----------+-----------------------------------------------------------------------------------+
+; g_clock_frequency ; 50000000 ; Signed Integer                                                                    ;
+; g_step_rate_hz    ; 1000     ; Signed Integer                                                                    ;
+; g_step_pulse      ; 100      ; Signed Integer                                                                    ;
++-------------------+----------+-----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_A_init ;
-+-------------------+----------+------------------------------------------------------------------------------------------------------+
-; Parameter Name    ; Value    ; Type                                                                                                 ;
-+-------------------+----------+------------------------------------------------------------------------------------------------------+
-; g_clock_frequency ; 50000000 ; Signed Integer                                                                                       ;
-; g_pwm_frequency   ; 200000   ; Signed Integer                                                                                       ;
-+-------------------+----------+------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init|Motor_PulseWidthModulation:PWM_B_init ;
-+-------------------+----------+------------------------------------------------------------------------------------------------------+
-; Parameter Name    ; Value    ; Type                                                                                                 ;
-+-------------------+----------+------------------------------------------------------------------------------------------------------+
-; g_clock_frequency ; 50000000 ; Signed Integer                                                                                       ;
-; g_pwm_frequency   ; 200000   ; Signed Integer                                                                                       ;
-+-------------------+----------+------------------------------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init ;
-+-------------------+----------+--------------------------------------------------------------------------------+
-; Parameter Name    ; Value    ; Type                                                                           ;
-+-------------------+----------+--------------------------------------------------------------------------------+
-; g_clock_frequency ; 50000000 ; Signed Integer                                                                 ;
-; g_step_rate_hz    ; 2500     ; Signed Integer                                                                 ;
-; g_step_pulse      ; 200      ; Signed Integer                                                                 ;
-+-------------------+----------+--------------------------------------------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-----------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: A4988_Stepper_Motor_Driver:A4988_Stepper_Motor_Driver_X_init ;
-+-------------------+----------+----------------------------------------------------------------------------+
-; Parameter Name    ; Value    ; Type                                                                       ;
-+-------------------+----------+----------------------------------------------------------------------------+
-; g_clock_frequency ; 50000000 ; Signed Integer                                                             ;
-; g_step_rate_hz    ; 400      ; Signed Integer                                                             ;
-; g_step_pulse      ; 200      ; Signed Integer                                                             ;
-+-------------------+----------+----------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_02 ;
++-------------------+----------+-----------------------------------------------------------------------------------+
+; Parameter Name    ; Value    ; Type                                                                              ;
++-------------------+----------+-----------------------------------------------------------------------------------+
+; g_clock_frequency ; 50000000 ; Signed Integer                                                                    ;
+; g_step_rate_hz    ; 1000     ; Signed Integer                                                                    ;
+; g_step_pulse      ; 100      ; Signed Integer                                                                    ;
++-------------------+----------+-----------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -790,7 +682,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_2_init"                                            ;
+; Port Connectivity Checks: "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init"                                            ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 ; Port          ; Type   ; Severity ; Details                                                                             ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -800,44 +692,35 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------+
-; Port Connectivity Checks: "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init" ;
-+---------------+-------+----------+-------------------------------------------+
-; Port          ; Type  ; Severity ; Details                                   ;
-+---------------+-------+----------+-------------------------------------------+
-; i_a_direction ; Input ; Info     ; Stuck at GND                              ;
-; i_b_direction ; Input ; Info     ; Stuck at GND                              ;
-+---------------+-------+----------+-------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 57                          ;
-; cycloneiii_ff         ; 413                         ;
-;     CLR               ; 19                          ;
-;     ENA               ; 24                          ;
-;     ENA SCLR          ; 86                          ;
-;     ENA SCLR SLD      ; 27                          ;
-;     SCLR              ; 130                         ;
+; boundary_port         ; 55                          ;
+; cycloneiii_ff         ; 411                         ;
+;     CLR               ; 27                          ;
+;     CLR SCLR          ; 27                          ;
+;     ENA               ; 19                          ;
+;     ENA CLR SCLR      ; 54                          ;
+;     ENA SCLR          ; 32                          ;
+;     SCLR              ; 128                         ;
 ;     SCLR SLD          ; 3                           ;
-;     plain             ; 124                         ;
-; cycloneiii_lcell_comb ; 1231                        ;
+;     plain             ; 121                         ;
+; cycloneiii_lcell_comb ; 1245                        ;
 ;     arith             ; 603                         ;
 ;         1 data inputs ; 1                           ;
 ;         2 data inputs ; 359                         ;
 ;         3 data inputs ; 243                         ;
-;     normal            ; 628                         ;
+;     normal            ; 642                         ;
 ;         0 data inputs ; 28                          ;
 ;         1 data inputs ; 21                          ;
-;         2 data inputs ; 133                         ;
-;         3 data inputs ; 148                         ;
-;         4 data inputs ; 298                         ;
+;         2 data inputs ; 136                         ;
+;         3 data inputs ; 138                         ;
+;         4 data inputs ; 319                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 56.10                       ;
-; Average LUT depth     ; 19.29                       ;
+; Average LUT depth     ; 19.37                       ;
 +-----------------------+-----------------------------+
 
 
@@ -870,50 +753,51 @@ Info: Running Quartus Prime Analysis & Synthesis
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details, at
     Info: https://fpgasoftware.intel.com/eula.
-    Info: Processing started: Fri May 22 14:59:35 2026
+    Info: Processing started: Sun May 24 19:34:37 2026
 Info: Command: quartus_map ./generated/FPGA --parallel=12 --64bit --effort=auto --family="MAX 10" --incremental_compilation=full_incremental_compilation --optimize=balanced --part=10M50DAF484C7G --state_machine_encoding=auto
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20032): Parallel compilation is enabled and will use up to 12 processors
-Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd
-    Info (12022): Found design unit 1: Motor_StepperSequencer-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd Line: 20
-    Info (12023): Found entity 1: Motor_StepperSequencer File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd
-    Info (12022): Found design unit 1: VideoGraphicsArray-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd Line: 46
-    Info (12023): Found entity 1: VideoGraphicsArray File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd
-    Info (12022): Found design unit 1: Servo_PulseWidthModulation-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd Line: 19
-    Info (12023): Found entity 1: Servo_PulseWidthModulation File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd
-    Info (12022): Found design unit 1: Motor_PulseWidthModulation-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 17
-    Info (12023): Found entity 1: Motor_PulseWidthModulation File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd
-    Info (12022): Found design unit 1: VGA_Rainbow-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd Line: 38
-    Info (12023): Found entity 1: VGA_Rainbow File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd Line: 5
+Warning (20031): Parallel compilation is enabled for 12 processors, but there are only 6 processors in the system. Runtime may increase due to over usage of the processor space.
 Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd
     Info (12022): Found design unit 1: L9110_2_CHANNEL_MOTOR_DRIVER-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd Line: 25
     Info (12023): Found entity 1: L9110_2_CHANNEL_MOTOR_DRIVER File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd Line: 6
-Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd
-    Info (12022): Found design unit 1: speaker-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 16
-    Info (12023): Found entity 1: Speaker File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd
+    Info (12022): Found design unit 1: VGA_Rainbow-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd Line: 38
+    Info (12023): Found entity 1: VGA_Rainbow File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/A4988_Stepper_Motor_Driver.vhd
     Info (12022): Found design unit 1: A4988_Stepper_Motor_Driver-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/A4988_Stepper_Motor_Driver.vhd Line: 22
     Info (12023): Found entity 1: A4988_Stepper_Motor_Driver File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/A4988_Stepper_Motor_Driver.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/TMC2208_Stepper_Motor_Driver.vhd
     Info (12022): Found design unit 1: TMC2208_Stepper_Motor_Driver-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/TMC2208_Stepper_Motor_Driver.vhd Line: 22
     Info (12023): Found entity 1: TMC2208_Stepper_Motor_Driver File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/TMC2208_Stepper_Motor_Driver.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd
+    Info (12022): Found design unit 1: speaker-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 16
+    Info (12023): Found entity 1: Speaker File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd
+    Info (12022): Found design unit 1: Motor_StepperSequencer-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd Line: 20
+    Info (12023): Found entity 1: Motor_StepperSequencer File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_StepperSequencer.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd
+    Info (12022): Found design unit 1: Servo_PulseWidthModulation-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd Line: 19
+    Info (12023): Found entity 1: Servo_PulseWidthModulation File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Servo_PulseWidthModulation.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd
+    Info (12022): Found design unit 1: VideoGraphicsArray-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd Line: 46
+    Info (12023): Found entity 1: VideoGraphicsArray File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/VideoGraphicsArray.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd
+    Info (12022): Found design unit 1: Motor_PulseWidthModulation-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 17
+    Info (12023): Found entity 1: Motor_PulseWidthModulation File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd
-    Info (12022): Found design unit 1: top_module-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 44
+    Info (12022): Found design unit 1: top_module-Behavioral File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 42
     Info (12023): Found entity 1: top_module File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 5
 Info (12127): Elaborating entity "top_module" for the top level hierarchy
-Warning (10873): Using initial value X (don't care) for net "o_LEDR[3..0]" at top_module.vhd(31) File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 31
-Info (12128): Elaborating entity "Speaker" for hierarchy "Speaker:Speaker_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 121
+Warning (10873): Using initial value X (don't care) for net "o_LEDR[9]" at top_module.vhd(29) File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 29
+Warning (10873): Using initial value X (don't care) for net "o_LEDR[4..3]" at top_module.vhd(29) File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 29
+Info (12128): Elaborating entity "Speaker" for hierarchy "Speaker:Speaker_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 149
 Info (12128): Elaborating entity "Motor_PulseWidthModulation" for hierarchy "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/Speaker.vhd Line: 33
-Info (12128): Elaborating entity "VGA_Rainbow" for hierarchy "VGA_Rainbow:VGA_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 131
+Info (12128): Elaborating entity "VGA_Rainbow" for hierarchy "VGA_Rainbow:VGA_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 159
 Info (12128): Elaborating entity "VideoGraphicsArray" for hierarchy "VGA_Rainbow:VGA_init|VideoGraphicsArray:VGA_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/VGA_Rainbow.vhd Line: 52
-Info (12128): Elaborating entity "L9110_2_CHANNEL_MOTOR_DRIVER" for hierarchy "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 162
+Info (12128): Elaborating entity "L9110_2_CHANNEL_MOTOR_DRIVER" for hierarchy "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 190
 Info (12128): Elaborating entity "Motor_PulseWidthModulation" for hierarchy "L9110_2_CHANNEL_MOTOR_DRIVER:Motor_Driver_1_init|Motor_PulseWidthModulation:PWM_A_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd Line: 32
-Info (12128): Elaborating entity "TMC2208_Stepper_Motor_Driver" for hierarchy "TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 198
-Info (12128): Elaborating entity "A4988_Stepper_Motor_Driver" for hierarchy "A4988_Stepper_Motor_Driver:A4988_Stepper_Motor_Driver_X_init" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 215
+Info (12128): Elaborating entity "TMC2208_Stepper_Motor_Driver" for hierarchy "TMC2208_Stepper_Motor_Driver:TMC2208_Stepper_Motor_Driver_Z_init_01" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 208
 Info (278001): Inferred 3 megafunctions from design logic
     Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|Mult0" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 25
     Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Speaker:Speaker_init|Motor_PulseWidthModulation:PWM_init|Div0" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/Concepts/Motor_PulseWidthModulation.vhd Line: 25
@@ -963,19 +847,21 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/sign
     Info (12023): Found entity 1: sign_div_unsign_9nh File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/sign_div_unsign_9nh.tdf Line: 25
 Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_ske.tdf
     Info (12023): Found entity 1: alt_u_div_ske File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/generated/db/alt_u_div_ske.tdf Line: 27
+Info (13000): Registers with preset signals will power-up high File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 85
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "o_Driver_A_B_S1" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 20
-    Warning (13410): Pin "o_Driver_B_B_S2" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 22
-    Warning (13410): Pin "o_LEDR[0]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 31
-    Warning (13410): Pin "o_LEDR[1]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 31
-    Warning (13410): Pin "o_LEDR[2]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 31
-    Warning (13410): Pin "o_LEDR[3]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 31
+    Warning (13410): Pin "o_LEDR[3]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 29
+    Warning (13410): Pin "o_LEDR[4]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 29
+    Warning (13410): Pin "o_LEDR[9]" is stuck at GND File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 29
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 3 registers lost all their fanouts during netlist optimizations.
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register r_StepperDirectionX will power up to High File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 85
+Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 12 input pin(s) that do not drive logic
+Warning (21074): Design contains 11 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "i_Button" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 9
+    Warning (15610): No output dependent on input pin "i_Switch[0]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
     Warning (15610): No output dependent on input pin "i_Switch[1]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
     Warning (15610): No output dependent on input pin "i_Switch[2]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
     Warning (15610): No output dependent on input pin "i_Switch[3]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
@@ -985,16 +871,14 @@ Warning (21074): Design contains 12 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "i_Switch[7]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
     Warning (15610): No output dependent on input pin "i_Switch[8]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
     Warning (15610): No output dependent on input pin "i_Switch[9]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 10
-    Warning (15610): No output dependent on input pin "i_Section_01_Sensor" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 12
-    Warning (15610): No output dependent on input pin "i_End_Stop_Z[1]" File: /home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project/src/top_module.vhd Line: 17
-Info (21057): Implemented 1290 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1301 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 20 input pins
-    Info (21059): Implemented 37 output pins
-    Info (21061): Implemented 1233 logic cells
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 1246 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 499 megabytes
-    Info: Processing ended: Fri May 22 14:59:41 2026
-    Info: Elapsed time: 00:00:06
-    Info: Total CPU time (on all processors): 00:00:11
+    Info: Peak virtual memory: 496 megabytes
+    Info: Processing ended: Sun May 24 19:34:44 2026
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:15
 
 

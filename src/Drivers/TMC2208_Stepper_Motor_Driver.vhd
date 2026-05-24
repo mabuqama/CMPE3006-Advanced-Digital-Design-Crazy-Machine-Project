@@ -44,62 +44,26 @@ begin
 
 process(i_Clock)
 begin
-	if rising_edge(i_Clock) then
+if rising_edge(i_Clock) then
+    if i_Enable = '0' then
+        r_Step <= '0';
+        r_Counter <= 0;
 
-		----------------------------------------------------------------
-		-- DISABLE / RESET
-		----------------------------------------------------------------
-		if i_Enable = '0' then
-			r_State      <= s_IDLE;
-			r_Counter    <= 0;
-			r_Step       <= '0';
+    else
+        if r_Counter = 0 then
+            r_Step <= '1';
+        elsif r_Counter = g_STEP_PULSE then
+            r_Step <= '0';
+        end if;
 
-		else
-
-			case r_State is
-
-				------------------------------------------------------------
-				-- IDLE: start cycle cleanly
-				------------------------------------------------------------
-				when s_IDLE =>
-					r_Counter   <= 0;
-					r_Step      <= '0';
-					r_State     <= s_STEP_HIGH;
-
-				------------------------------------------------------------
-				-- STEP HIGH PHASE
-				------------------------------------------------------------
-				when s_STEP_HIGH =>
-					r_Step <= '1';
-
-					if r_Counter >= g_STEP_PULSE then
-						r_Counter <= 0;
-
-						-- ✅ SAFE POINT: update direction ONLY here
-						r_Direction <= i_Direction;
-
-						r_State <= s_STEP_LOW;
-					else
-						r_Counter <= r_Counter + 1;
-					end if;
-
-				------------------------------------------------------------
-				-- STEP LOW PHASE
-				------------------------------------------------------------
-				when s_STEP_LOW =>
-					r_Step <= '0';
-
-					if r_Counter >= c_STEP_INTERVAL then
-						r_Counter <= 0;
-						r_State   <= s_STEP_HIGH;
-					else
-						r_Counter <= r_Counter + 1;
-					end if;
-
-			end case;
-		end if;
-
-	end if;
+        if r_Counter >= c_STEP_INTERVAL then
+            r_Counter <= 0;
+            r_Direction <= i_Direction;
+        else
+            r_Counter <= r_Counter + 1;
+        end if;
+    end if;
+end if;
 end process;
 
 end Behavioral;
