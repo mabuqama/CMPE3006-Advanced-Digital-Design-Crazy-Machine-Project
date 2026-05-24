@@ -1,0 +1,525 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e MIXED_VERSIONS
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/mabuqama/Documents/GitHub/CMPE3006-Advanced-Digital-Design-Crazy-Machine-Project
+Ea4988_stepper_motor_driver
+Z1 w1779439582
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 15
+R0
+Z5 8./src/Drivers/A4988_Stepper_Motor_Driver.vhd
+Z6 F./src/Drivers/A4988_Stepper_Motor_Driver.vhd
+l0
+L5 1
+VNe1ILcd7mXoVQXHXEXNQ_2
+!s100 DO`IKkSY94c1>EXlN?oQJ3
+Z7 OV;C;2020.1;71
+33
+Z8 !s110 1779634392
+!i10b 1
+Z9 !s108 1779634392.000000
+Z10 !s90 -2008|-work|work|./src/Drivers/A4988_Stepper_Motor_Driver.vhd|
+Z11 !s107 ./src/Drivers/A4988_Stepper_Motor_Driver.vhd|
+!i113 1
+Z12 o-2008 -work work
+Z13 tExplicit 1 CvgOpt 0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 26 a4988_stepper_motor_driver 0 22 Ne1ILcd7mXoVQXHXEXNQ_2
+!i122 15
+l39
+L22 93
+VXQbg^]V4C1gMiE2L9IfQo2
+!s100 >TCnF]0`GV:oYR=7B5U0?0
+R7
+33
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+El9110_2_channel_motor_driver
+R1
+R2
+R3
+R4
+!i122 13
+R0
+Z14 8./src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd
+Z15 F./src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd
+l0
+L6 1
+Vf]:3AkL7LzXUNm;;c[Y?U3
+!s100 zT3]c`h9C[8e=2fba96WY0
+R7
+33
+R8
+!i10b 1
+R9
+Z16 !s90 -2008|-work|work|./src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd|
+Z17 !s107 ./src/Drivers/L9110_2_CHANNEL_MOTOR_DRIVER.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+Z18 DEx4 work 26 motor_pulsewidthmodulation 0 22 YME:of^nB2;MJKzT3Z]n=0
+R2
+R3
+R4
+Z19 DEx4 work 28 l9110_2_channel_motor_driver 0 22 f]:3AkL7LzXUNm;;c[Y?U3
+!i122 13
+l31
+L25 55
+VoCA8<A`G><;]`<URRQkXA0
+!s100 fcdaMfizJE?=g_6gRlaD@3
+R7
+33
+R8
+!i10b 1
+R9
+R16
+R17
+!i113 1
+R12
+R13
+Emotor_pulsewidthmodulation
+R1
+R2
+R3
+R4
+!i122 21
+R0
+Z20 8./src/Concepts/Motor_PulseWidthModulation.vhd
+Z21 F./src/Concepts/Motor_PulseWidthModulation.vhd
+l0
+L5 1
+VYME:of^nB2;MJKzT3Z]n=0
+!s100 F^H7A=adMHBjD[D=QUZcE1
+R7
+33
+R8
+!i10b 1
+R9
+Z22 !s90 -2008|-work|work|./src/Concepts/Motor_PulseWidthModulation.vhd|
+Z23 !s107 ./src/Concepts/Motor_PulseWidthModulation.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+R18
+!i122 21
+l24
+L17 28
+V7C]aX81jI9k;Yc1k4E1GF3
+!s100 ^VZM;8IaAa0nY5@G5oE=O1
+R7
+33
+R8
+!i10b 1
+R9
+R22
+R23
+!i113 1
+R12
+R13
+vMotor_PulseWidthModulation_tb
+Z24 DXx6 sv_std 3 std 0 22 VYECXdT12H8WgbUP_5Y6:3
+Z25 !s110 1779633116
+!i10b 1
+!s100 l<dKlj2L3nI6F:I<MBZDn0
+Z26 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IDiSGP:M<<R=aET;`gS5Al0
+Z27 VDg1SIo80bB@j0V0VzS_@n1
+S1
+R0
+R1
+8./tb/Concepts/Motor_PulseWidthModulation_tb.sv
+F./tb/Concepts/Motor_PulseWidthModulation_tb.sv
+!i122 10
+L0 3 88
+Z28 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z29 !s108 1779633116.000000
+!s107 ./tb/Concepts/Motor_PulseWidthModulation_tb.sv|
+!s90 -sv|-work|work|./tb/Concepts/Motor_PulseWidthModulation_tb.sv|
+!i113 1
+Z30 o-sv -work work
+Z31 tCvgOpt 0
+n@motor_@pulse@width@modulation_tb
+Emotor_steppersequencer
+R1
+R2
+R3
+R4
+!i122 18
+R0
+Z32 8./src/Concepts/Motor_StepperSequencer.vhd
+Z33 F./src/Concepts/Motor_StepperSequencer.vhd
+l0
+L5 1
+VUj1FinXlnNmL]KWE^?f6M0
+!s100 ]Ro@Jam37cBWDGM<FjW>Q1
+R7
+33
+R8
+!i10b 1
+R9
+Z34 !s90 -2008|-work|work|./src/Concepts/Motor_StepperSequencer.vhd|
+Z35 !s107 ./src/Concepts/Motor_StepperSequencer.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 22 motor_steppersequencer 0 22 Uj1FinXlnNmL]KWE^?f6M0
+!i122 18
+l36
+L20 100
+VPPECOz^dR4HmG6cYH^m^U2
+!s100 QVR8zHleJT1>MNKKQ`khP3
+R7
+33
+R8
+!i10b 1
+R9
+R34
+R35
+!i113 1
+R12
+R13
+Eservo_pulsewidthmodulation
+R1
+R2
+R3
+R4
+!i122 19
+R0
+Z36 8./src/Concepts/Servo_PulseWidthModulation.vhd
+Z37 F./src/Concepts/Servo_PulseWidthModulation.vhd
+l0
+L5 1
+VNl3f2Cd=PEHfR44BbfQ9;1
+!s100 IEZK>h`ES@KhGl8K2kSU42
+R7
+33
+R8
+!i10b 1
+R9
+Z38 !s90 -2008|-work|work|./src/Concepts/Servo_PulseWidthModulation.vhd|
+Z39 !s107 ./src/Concepts/Servo_PulseWidthModulation.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+DEx4 work 26 servo_pulsewidthmodulation 0 22 Nl3f2Cd=PEHfR44BbfQ9;1
+!i122 19
+l28
+L19 30
+VT[kFRomlm[Wzg]DR0kk1D1
+!s100 jPV1>0>2kH>b7R[E7BVOY3
+R7
+33
+R8
+!i10b 1
+R9
+R38
+R39
+!i113 1
+R12
+R13
+vServo_PulseWidthModulation_tb
+R24
+R25
+!i10b 1
+!s100 1FQNo:>;64ImE@Az7]`CC3
+R26
+I@K:7efM>B7maLL@jfK[`61
+R27
+S1
+R0
+R1
+8./tb/Concepts/Servo_PulseWidthModulation_tb.sv
+F./tb/Concepts/Servo_PulseWidthModulation_tb.sv
+!i122 11
+L0 3 102
+R28
+r1
+!s85 0
+31
+R29
+!s107 ./tb/Concepts/Servo_PulseWidthModulation_tb.sv|
+!s90 -sv|-work|work|./tb/Concepts/Servo_PulseWidthModulation_tb.sv|
+!i113 1
+R30
+R31
+n@servo_@pulse@width@modulation_tb
+Espeaker
+R1
+R2
+R3
+R4
+!i122 17
+R0
+Z40 8./src/Drivers/Speaker.vhd
+Z41 F./src/Drivers/Speaker.vhd
+l0
+L5 1
+V5ooe;l^3:EjRUDTfKZYnR2
+!s100 OVMm<[Kkd`SVPDf?B<lOH0
+R7
+33
+R8
+!i10b 1
+R9
+Z42 !s90 -2008|-work|work|./src/Drivers/Speaker.vhd|
+Z43 !s107 ./src/Drivers/Speaker.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R18
+R2
+R3
+R4
+Z44 DEx4 work 7 speaker 0 22 5ooe;l^3:EjRUDTfKZYnR2
+!i122 17
+l31
+L16 71
+VS@:O626kcFaJH?4UB]NhR2
+!s100 ACAREOK0eheC@7MCRCS7K0
+R7
+33
+R8
+!i10b 1
+R9
+R42
+R43
+!i113 1
+R12
+R13
+Etmc2208_stepper_motor_driver
+Z45 w1779546081
+R2
+R3
+R4
+!i122 16
+R0
+Z46 8./src/Drivers/TMC2208_Stepper_Motor_Driver.vhd
+Z47 F./src/Drivers/TMC2208_Stepper_Motor_Driver.vhd
+l0
+L5 1
+VY[TFVTZKN?5i9AfoBCKS<1
+!s100 8J1h4bY7;DFLZ?QU:;1:Q3
+R7
+33
+R8
+!i10b 1
+R9
+Z48 !s90 -2008|-work|work|./src/Drivers/TMC2208_Stepper_Motor_Driver.vhd|
+Z49 !s107 ./src/Drivers/TMC2208_Stepper_Motor_Driver.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R2
+R3
+R4
+Z50 DEx4 work 28 tmc2208_stepper_motor_driver 0 22 Y[TFVTZKN?5i9AfoBCKS<1
+!i122 16
+l39
+L22 48
+VTaa;bz[1Fz=kV>L:XlOmV3
+!s100 iGW7`LcL4PEfcd<ZQJE^[2
+R7
+33
+R8
+!i10b 1
+R9
+R48
+R49
+!i113 1
+R12
+R13
+Etop_module
+Z51 w1779628668
+R2
+R3
+R4
+!i122 22
+R0
+Z52 8./src/top_module.vhd
+Z53 F./src/top_module.vhd
+l0
+L5 1
+V31o6?>k3?7SLj2V5VSAU70
+!s100 D?Vcn_]Zh5YDTA5aEV13;0
+R7
+33
+R8
+!i10b 1
+R9
+Z54 !s90 -2008|-work|work|./src/top_module.vhd|
+Z55 !s107 ./src/top_module.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R50
+R19
+Z56 DEx4 work 11 vga_rainbow 0 22 [_bKnI?7e=@X7Bc9>gAN60
+R44
+R2
+R3
+R4
+Z57 DEx4 work 10 top_module 0 22 31o6?>k3?7SLj2V5VSAU70
+!i122 22
+l108
+Z58 L42 506
+Z59 V1i]dY4F2CQP6=`F3?gFUU3
+Z60 !s100 ABBSk_G:VOS>>a<j_DYFc3
+R7
+33
+R8
+!i10b 1
+R9
+R54
+R55
+!i113 1
+R12
+R13
+Evga_rainbow
+R1
+R2
+R3
+R4
+!i122 14
+R0
+Z61 8./src/Drivers/VGA_Rainbow.vhd
+Z62 F./src/Drivers/VGA_Rainbow.vhd
+l0
+L5 1
+V[_bKnI?7e=@X7Bc9>gAN60
+!s100 N_1Z;dH?H[:nJz2U>cCUF3
+R7
+33
+R8
+!i10b 1
+R9
+Z63 !s90 -2008|-work|work|./src/Drivers/VGA_Rainbow.vhd|
+Z64 !s107 ./src/Drivers/VGA_Rainbow.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+Z65 DEx4 work 18 videographicsarray 0 22 zC<?HQEmeVWiPi=D@Y[bE2
+R2
+R3
+R4
+R56
+!i122 14
+l50
+L38 86
+V8[`HfG6?7aiXEXYUMSPYD2
+!s100 h>4SYi3NEiYSO@UgGRgC_2
+R7
+33
+R8
+!i10b 1
+R9
+R63
+R64
+!i113 1
+R12
+R13
+Evideographicsarray
+R1
+R3
+R4
+!i122 20
+R0
+Z66 8./src/Concepts/VideoGraphicsArray.vhd
+Z67 F./src/Concepts/VideoGraphicsArray.vhd
+l0
+L6 1
+VzC<?HQEmeVWiPi=D@Y[bE2
+!s100 HB92`MM:UZ>b6mh<ME2b51
+R7
+33
+R8
+!i10b 1
+R9
+Z68 !s90 -2008|-work|work|./src/Concepts/VideoGraphicsArray.vhd|
+Z69 !s107 ./src/Concepts/VideoGraphicsArray.vhd|
+!i113 1
+R12
+R13
+Abehavioral
+R3
+R4
+R65
+!i122 20
+l80
+L46 184
+V^hE9I]kk^YU[3zXEZTb683
+!s100 >2il13RX^Fe=[Q1h]]inC2
+R7
+33
+R8
+!i10b 1
+R9
+R68
+R69
+!i113 1
+R12
+R13
+vVideoGraphicsArray_tb
+R24
+R25
+!i10b 1
+!s100 kB`nBXhUl3jL:FQO5TGJU1
+R26
+If78L[?2=aSE=TYP71gM202
+R27
+S1
+R0
+R1
+8./tb/Concepts/VideoGraphicsArray_tb.sv
+F./tb/Concepts/VideoGraphicsArray_tb.sv
+!i122 12
+L0 3 111
+R28
+r1
+!s85 0
+31
+R29
+!s107 ./tb/Concepts/VideoGraphicsArray_tb.sv|
+!s90 -sv|-work|work|./tb/Concepts/VideoGraphicsArray_tb.sv|
+!i113 1
+R30
+R31
+n@video@graphics@array_tb

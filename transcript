@@ -1,0 +1,53 @@
+# Reading pref.tcl
+# vsim -gui work.Motor_PulseWidthModulation_tb 
+# Start time: 22:53:14 on May 24,2026
+# Loading sv_std.std
+# Loading work.Motor_PulseWidthModulation_tb
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.motor_pulsewidthmodulation(behavioral)
+add wave -position insertpoint  \
+sim:/Motor_PulseWidthModulation_tb/r_Clock \
+sim:/Motor_PulseWidthModulation_tb/r_Duty_Cycle \
+sim:/Motor_PulseWidthModulation_tb/w_PWM_Signal
+run
+# ** Warning: NUMERIC_STD.TO_INTEGER: metavalue detected, returning 0
+#    Time: 0 ps  Iteration: 0  Instance: /Motor_PulseWidthModulation_tb/dut
+# 
+# === PWM SELF-CHECK START ===
+# 
+run
+run -continue
+run -all
+# [0;32m[PASS][0m Test 0 Duty=0 High=0 Expected=0
+# [0;32m[PASS][0m Test 1 Duty=13 High=2 Expected=2
+# [0;32m[PASS][0m Test 2 Duty=26 High=5 Expected=5
+# [0;32m[PASS][0m Test 3 Duty=40 High=7 Expected=7
+# [0;32m[PASS][0m Test 4 Duty=53 High=10 Expected=10
+# [0;32m[PASS][0m Test 5 Duty=67 High=13 Expected=13
+# [0;32m[PASS][0m Test 6 Duty=80 High=15 Expected=15
+# [0;32m[PASS][0m Test 7 Duty=93 High=18 Expected=18
+# [0;32m[PASS][0m Test 8 Duty=107 High=20 Expected=20
+# [0;32m[PASS][0m Test 9 Duty=120 High=23 Expected=23
+# [0;32m[PASS][0m Test 10 Duty=134 High=26 Expected=26
+# [0;32m[PASS][0m Test 11 Duty=147 High=28 Expected=28
+# [0;32m[PASS][0m Test 12 Duty=161 High=31 Expected=31
+# [0;32m[PASS][0m Test 13 Duty=174 High=34 Expected=34
+# [0;32m[PASS][0m Test 14 Duty=187 High=36 Expected=36
+# [0;32m[PASS][0m Test 15 Duty=201 High=39 Expected=39
+# [0;32m[PASS][0m Test 16 Duty=214 High=41 Expected=41
+# [0;32m[PASS][0m Test 17 Duty=228 High=44 Expected=44
+# [0;32m[PASS][0m Test 18 Duty=241 High=47 Expected=47
+# [0;32m[PASS][0m Test 19 Duty=255 High=50 Expected=50
+# 
+# === TEST COMPLETE ===
+# 
+# ** Note: $finish    : ./tb/Concepts/Motor_PulseWidthModulation_tb.sv(87)
+#    Time: 2 us  Iteration: 0  Instance: /Motor_PulseWidthModulation_tb
+# 1
+# Break in Module Motor_PulseWidthModulation_tb at ./tb/Concepts/Motor_PulseWidthModulation_tb.sv line 87
+# Break key hit
+# End time: 23:18:09 on May 24,2026, Elapsed time: 0:24:55
+# Errors: 0, Warnings: 1
